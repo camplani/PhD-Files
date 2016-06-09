@@ -1,0 +1,15 @@
+--------------------------------------------------------
+-- BRANCH
+--------------------------------------------------------
+-- Info about the branches
+git branch -vv
+-- Create a new branch 
+git checkout -b <new_branch>
+-- Push a new branch
+git push -u origin <new_branch>
+-- Delete a remote branch
+git push origin --delete <new_branch>
+-- Delete a local branch
+git branch -d <new_branch>
+-- Forcing the deleting of a local branch 
+git branch -D <new_branch>
