@@ -1,0 +1,427 @@
+2016-Sep-23 17:01:49,247 DEBUG_0 [RunCrateCtrlActions* Ctrl_init_RunCrateCtrlActions(...) at RodCrate/src/controller/RunCrateCtrlActions.cpp:88] Creating instance of RunCrateCtrlActions
+error: 0x20c      => major: Error  12 in package   2 => VMEbus driver/library for the RCC: Error from file operation (open/close)
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> CORAL_AUTH_PATH=/atlas/db/.adm/coral
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> CORAL_DBLOOKUP_PATH=/atlas/db/.adm/coral
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> DF_CONFIG_IS_SERVER=DFConfig
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> L1_RATES_IS=L1TriggerRates
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> LARG_DESTINATION_BASE_PORT=20000:1
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> LARG_IS_SERVER_NAME=RunParams
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> LARG_ROD_LOG_PATH=/logs/tdaq-06-01-01/LArABBA
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> LARG_TOP_SEGMENT_NAME=LArABBA
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> LD_LIBRARY_PATH=/det/lar/project/LargOnline/releases/LargOnline-611-31-00/Vme/v11r18p2/x86_64-slc6-gcc49-opt/lib:/det/lar/project/usersarea/alexis/611.31.00/Abba/x86_64-slc6-gcc49-opt/lib:/det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/x86_64-slc6-gcc49-opt/lib:/sw/extras/sw_tmp/current/tdq/tdaq-06-01-01/installed//x86_64-slc6-gcc49-opt/lib:/sw/atlas/tdaq/tdaq-06-01-01/installed/x86_64-slc6-gcc49-opt/lib:/sw/atlas/dqm-common/dqm-common-00-51-00/installed/x86_64-slc6-gcc49-opt/lib:/sw/atlas/tdaq-common/tdaq-common-01-42-00/installed/x86_64-slc6-gcc49-opt/lib:/sw/atlas/LCG_81c/Boost/1.59.0_python2.7/x86_64-slc6-gcc49-opt/lib:/sw/atlas/LCG_81c/Python/2.7.9.p1/x86_64-slc6-gcc49-opt/lib:/sw/atlas/LCG_81c/ROOT/6.04.14/x86_64-slc6-gcc49-opt/lib:/sw/atlas/sw/lcg/contrib/gcc/4.9.3/x86_64-slc6-gcc49-opt/lib:/sw/atlas/LCG_81c/COOL/3_1_0/x86_64-slc6-gcc49-opt/lib:/sw/atlas/LCG_81c/CORAL/3_1_0/x86_64-slc6-gcc49-opt/lib:/sw/atlas/LCG_81c/XercesC/3.1.1p1/x86_64-slc6-gcc49-opt/lib:/sw/atlas/LCG_81c/oracle/11.2.0.3.0/x86_64-slc6-gcc49-opt/lib:/sw/atlas/LCG_81c/mysql/5.5.27/x86_64-slc6-gcc49-opt/lib:/sw/atlas/LCG_81c/sqlite/3070900/x86_64-slc6-gcc49-opt/lib:/det/lar/project/usersarea/alexis/611.31.00/Spac/v19r19p1/x86_64-slc6-gcc49-opt/lib:/det/lar/project/LargOnline/releases/LargOnline-611-31-00/Rod/v10r21p1/x86_64-slc6-gcc49-opt/lib
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> PATH=/det/lar/project/LargOnline/releases/LargOnline-611-31-00/Vme/v11r18p2/share/bin:/det/lar/project/LargOnline/releases/LargOnline-611-31-00/Vme/v11r18p2/x86_64-slc6-gcc49-opt/bin:/det/lar/project/usersarea/alexis/611.31.00/Abba/share/bin:/det/lar/project/usersarea/alexis/611.31.00/Abba/x86_64-slc6-gcc49-opt/bin:/det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/share/bin:/det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/x86_64-slc6-gcc49-opt/bin:/sw/extras/sw_tmp/current/tdq/tdaq-06-01-01/installed//share/bin:/sw/extras/sw_tmp/current/tdq/tdaq-06-01-01/installed//x86_64-slc6-gcc49-opt/bin:/sw/atlas/tdaq/tdaq-06-01-01/installed/share/bin:/sw/atlas/tdaq/tdaq-06-01-01/installed/x86_64-slc6-gcc49-opt/bin:/sw/atlas/dqm-common/dqm-common-00-51-00/installed/share/bin:/sw/atlas/dqm-common/dqm-common-00-51-00/installed/x86_64-slc6-gcc49-opt/bin:/sw/atlas/tdaq-common/tdaq-common-01-42-00/installed/share/bin:/sw/atlas/tdaq-common/tdaq-common-01-42-00/installed/x86_64-slc6-gcc49-opt/bin:/sw/atlas/LCG_81c/Boost/1.59.0_python2.7/x86_64-slc6-gcc49-opt/bin:/sw/atlas/LCG_81c/Python/2.7.9.p1/x86_64-slc6-gcc49-opt/bin:/sw/atlas/LCG_81c/ROOT/6.04.14/x86_64-slc6-gcc49-opt/bin:/sw/atlas/sw/lcg/contrib/gcc/4.9.3/x86_64-slc6-gcc49-opt/bin:/sw/atlas/LCG_81c/COOL/3_1_0/x86_64-slc6-gcc49-opt/bin:/sw/atlas/LCG_81c/CORAL/3_1_0/x86_64-slc6-gcc49-opt/bin:/sw/atlas/LCG_81c/XercesC/3.1.1p1/x86_64-slc6-gcc49-opt/bin:/sw/atlas/LCG_81c/oracle/11.2.0.3.0/x86_64-slc6-gcc49-opt/bin:/sw/atlas/LCG_81c/mysql/5.5.27/x86_64-slc6-gcc49-opt/bin:/sw/atlas/LCG_81c/sqlite/3070900/x86_64-slc6-gcc49-opt/bin:/det/lar/project/usersarea/alexis/611.31.00/Spac/v19r19p1/share/bin:/det/lar/project/usersarea/alexis/611.31.00/Spac/v19r19p1/x86_64-slc6-gcc49-opt/bin:/det/lar/project/LargOnline/releases/LargOnline-611-31-00/Rod/v10r21p1/share/bin:/det/lar/project/LargOnline/releases/LargOnline-611-31-00/Rod/v10r21p1/x86_64-slc6-gcc49-opt/bin:/usr/bin:/bin:
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> PMG_SYNC_FILE=/tmp/ProcessManager/tdaqsw/pmg://pc-lar-mon-01.cern.ch/LArABBA/ABBA_Controller/2.sync
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> ROOTENV_NO_HOME=yes
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> ROOTSYS=/sw/atlas/ROOT/6.04.14-f20e4/x86_64-slc6-gcc49-opt
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> ROOT_INCLUDE_PATH=/sw/atlas/sw/lcg/contrib/gcc/4.9.3/x86_64-slc6/include/c++/4.9.3
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_APPLICATION_NAME=ABBA_Controller
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_APPLICATION_OBJECT_ID=ABBA_Controller
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_DB=rdbconfig:RDB
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_DB_DATA=/det/lar/project/usersarea/alexis/611.31.00/ABBA_PARTITION/database/lar/abba/lar/partitions/Larg.data.xml
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_DB_NAME=RDB
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_DB_PATH=/det/lar/project/usersarea/alexis/611.31.00/ABBA_PARTITION/database:/det/lar/project/usersarea/alexis/611.31.00/ABBA_PARTITION/database/lar/abba:/atlas/oks/tdaq-06-01-01:/det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/database:/det/lar/project/LargOnline/releases/LargOnline-611-31-00/LArDataOut/v1r2p1
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_DVS_KB_PATH=/sw/atlas/tdaq/tdaq-06-01-01/installed/share/data
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_ERS_DEBUG=lstdout
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_ERS_DEBUG_LEVEL=0
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_ERS_ERROR=throttle(30,100),lstderr,mts
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_ERS_FATAL=lstderr,mts
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_ERS_INFO=throttle(30,100),lstdout,mts
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_ERS_NO_SIGNAL_HANDLERS=1
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_ERS_STREAM_LIBS=mtsStreams
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_ERS_WARNING=throttle(30,100),lstderr,mts
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_INST_PATH=/sw/atlas/tdaq/tdaq-06-01-01/installed
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_IPC_INIT_REF=file:/sw/tdaq/ipc/tdaq-06-01-01/corbalock
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_IPC_TIMEOUT=15000
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_IS_SERVER=DF
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_OH_SERVER=Histogramming
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_PARTITION=LArABBA
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_PROBE_INTERVAL=25
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_PUBLISHSTATISTICS_INTERVAL=63
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TDAQ_SETUP_POINT1=1
+2016-Sep-23 17:01:49,248 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:578] Environment variable> TNS_ADMIN=/sw/oracle/admin
+2016-Sep-23 17:01:49,249 DEBUG_0 [void RunCtrlActions::Initialize(...) at RodCrate/src/controller/RunCtrlActions.cpp:601] myReadDbInCtor=1
+2016-Sep-23 17:01:49,274 DEBUG_0 [void RunCtrlActions::ReadDb(...) at RodCrate/src/controller/RunCtrlActions.cpp:1629] Root controller is RootController
+2016-Sep-23 17:01:49,275 DEBUG_0 [void RunCtrlActions::FindLibraries(...) at RodCrate/src/controller/RunCtrlActions.cpp:1319] check library file "/det/lar/project/usersarea/alexis/611.31.00/Abba/x86_64-slc6-gcc49-opt/libAbba.so"
+2016-Sep-23 17:01:49,276 DEBUG_0 [void RunCtrlActions::FindLibraries(...) at RodCrate/src/controller/RunCtrlActions.cpp:1319] check library file "/det/lar/project/usersarea/alexis/611.31.00/Abba/x86_64-slc6-gcc49-opt/libAbba.so"
+2016-Sep-23 17:01:49,276 DEBUG_0 [void RunCtrlActions::FindLibraries(...) at RodCrate/src/controller/RunCtrlActions.cpp:1319] check library file "/det/lar/project/usersarea/alexis/611.31.00/Abba/x86_64-slc6-gcc49-opt/libAbba.so"
+PID 12827 - Fri Sep 23 17:01:49 2016 - [INFO] OnlineDcl::Load (): shared library "/det/lar/project/usersarea/alexis/611.31.00/Abba/x86_64-slc6-gcc49-opt/libAbba.so" loaded.
+PID 12827 - Fri Sep 23 17:01:49 2016 - [INFO] OnlineDcl::Load (): "/det/lar/project/usersarea/alexis/611.31.00/Abba/x86_64-slc6-gcc49-opt/libAbba.so" already loaded...
+PID 12827 - Fri Sep 23 17:01:49 2016 - [INFO] OnlineDcl::Load (): "/det/lar/project/usersarea/alexis/611.31.00/Abba/x86_64-slc6-gcc49-opt/libAbba.so" already loaded...
+2016-Sep-23 17:01:49,670 DEBUG_0 [RunCtrlActions::PluginInfo RunCtrlActions::CreatePluginInfo(...) at RodCrate/src/controller/RunCtrlActions.cpp:990] Found I/O data "AbbaRequestQ" AbbaRequestQ
+2016-Sep-23 17:01:49,672 DEBUG_0 [void RunCtrlActions::FindLibraries(...) at RodCrate/src/controller/RunCtrlActions.cpp:1319] check library file "/det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/x86_64-slc6-gcc49-opt/libGuiPanelCtrl.so"
+2016-Sep-23 17:01:49,673 DEBUG_0 [void RunCtrlActions::FindLibraries(...) at RodCrate/src/controller/RunCtrlActions.cpp:1319] check library file "/det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/x86_64-slc6-gcc49-opt/libGuiPanelCtrl.so"
+2016-Sep-23 17:01:49,673 DEBUG_0 [void RunCtrlActions::FindLibraries(...) at RodCrate/src/controller/RunCtrlActions.cpp:1319] check library file "/det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/x86_64-slc6-gcc49-opt/libMsgInterceptor.so"
+2016-Sep-23 17:01:49,673 DEBUG_0 [void RunCtrlActions::FindLibraries(...) at RodCrate/src/controller/RunCtrlActions.cpp:1319] check library file "/det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/x86_64-slc6-gcc49-opt/libBusErrorMonitor.so"
+PID 12827 - Fri Sep 23 17:01:49 2016 - [INFO] OnlineDcl::Load (): shared library "/det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/x86_64-slc6-gcc49-opt/libGuiPanelCtrl.so" loaded.
+PID 12827 - Fri Sep 23 17:01:49 2016 - [INFO] OnlineDcl::Load (): "/det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/x86_64-slc6-gcc49-opt/libGuiPanelCtrl.so" already loaded...
+PID 12827 - Fri Sep 23 17:01:49 2016 - [INFO] OnlineDcl::Load (): shared library "/det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/x86_64-slc6-gcc49-opt/libMsgInterceptor.so" loaded.
+2016-Sep-23 17:01:49,687 DEBUG_0 [RunCtrlActions::AspectInfo RunCtrlActions::CreateAspectInfo(...) at RodCrate/src/controller/RunCtrlActions.cpp:957] Found aspect "MessageInterceptor" Message interceptor
+PID 12827 - Fri Sep 23 17:01:49 2016 - [INFO] OnlineDcl::Load (): shared library "/det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/x86_64-slc6-gcc49-opt/libBusErrorMonitor.so" loaded.
+2016-Sep-23 17:01:49,689 DEBUG_0 [RunCtrlActions::AspectInfo RunCtrlActions::CreateAspectInfo(...) at RodCrate/src/controller/RunCtrlActions.cpp:957] Found aspect "BusErrorMonitor" VMEbus error monitor
+2016-Sep-23 17:01:49,690 DEBUG_0 [void RunCtrlActions::FindLibraries(...) at RodCrate/src/controller/RunCtrlActions.cpp:1319] check library file "/det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/x86_64-slc6-gcc49-opt/libLarg-hw-dal.so"
+2016-Sep-23 17:01:49,691 DEBUG_0 [void RunCtrlActions::FindLibraries(...) at RodCrate/src/controller/RunCtrlActions.cpp:1319] check library file "/det/lar/project/usersarea/alexis/611.31.00/Spac/v19r19p1/x86_64-slc6-gcc49-opt/libSpac.so"
+2016-Sep-23 17:01:49,691 DEBUG_0 [void RunCtrlActions::FindLibraries(...) at RodCrate/src/controller/RunCtrlActions.cpp:1319] check library file "/det/lar/project/LargOnline/releases/LargOnline-611-31-00/Rod/v10r21p1/x86_64-slc6-gcc49-opt/libRod.so"
+2016-Sep-23 17:01:49,692 DEBUG_0 [void RunCtrlActions::FindLibraries(...) at RodCrate/src/controller/RunCtrlActions.cpp:1319] check library file "/det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/x86_64-slc6-gcc49-opt/libLARGConfig.so"
+PID 12827 - Fri Sep 23 17:01:49 2016 - [INFO] OnlineDcl::Load (): shared library "/det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/x86_64-slc6-gcc49-opt/libLarg-hw-dal.so" loaded.
+PID 12827 - Fri Sep 23 17:01:49 2016 - [INFO] OnlineDcl::Load (): shared library "/det/lar/project/usersarea/alexis/611.31.00/Spac/v19r19p1/x86_64-slc6-gcc49-opt/libSpac.so" loaded.
+PID 12827 - Fri Sep 23 17:01:49 2016 - [INFO] OnlineDcl::Load (): shared library "/det/lar/project/LargOnline/releases/LargOnline-611-31-00/Rod/v10r21p1/x86_64-slc6-gcc49-opt/libRod.so" loaded.
+PID 12827 - Fri Sep 23 17:01:49 2016 - [INFO] OnlineDcl::Load (): shared library "/det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/x86_64-slc6-gcc49-opt/libLARGConfig.so" loaded.
+2016-Sep-23 17:01:49,729 DEBUG_0 [void RunCtrlActions::LoadPlugins(...) at RodCrate/src/controller/RunCtrlActions.cpp:1401] Found Config "LARGConfig" LARGConfig
+2016-Sep-23 17:01:49,730 DEBUG_0 [void RunCtrlActions::FindLibraries(...) at RodCrate/src/controller/RunCtrlActions.cpp:1319] check library file "/det/lar/project/usersarea/alexis/611.31.00/Abba/x86_64-slc6-gcc49-opt/libAbba.so"
+PID 12827 - Fri Sep 23 17:01:49 2016 - [INFO] OnlineDcl::Load (): "/det/lar/project/usersarea/alexis/611.31.00/Abba/x86_64-slc6-gcc49-opt/libAbba.so" already loaded...
+virtual void RunCrateCtrlActions::Build(const daq::core::Segment&): Crate name is ABBA_Crate, logical ID is 0
+void RunCtrlActions::CreateAspect(const RunCtrlActions::AspectInfo&): Aspect MessageInterceptor Message interceptor @ 0xc0d0c8
+void RunCtrlActions::CreateAspect(const RunCtrlActions::AspectInfo&): Aspect BusErrorMonitor VMEbus error monitor @ 0xc21018
+void RunCtrlActions::CreateIoData(const RunCtrlActions::PluginInfo&): Shared I/O data AbbaRequestQ AbbaRequestQ @ 0xc179a0
+2016-Sep-23 17:01:49,734 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control AbbaFragmentCollector
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc12450] ExtIoCtrlObject_GLOBAL@ExtIoCtrlFactory<FragmentCollector> was created
+2016-Sep-23 17:01:49,734 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_GLOBAL@ExtIoCtrlFactory<FragmentCollector>] attach 0xc12450 to type GLOBAL
+2016-Sep-23 17:01:49,734 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control GuiPanelGlobalCtrl
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc293f0] ExtIoCtrlObject_GLOBAL@ExtIoCtrlFactory<GuiPanelGlobalCtrl> was created
+2016-Sep-23 17:01:49,734 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_GLOBAL@ExtIoCtrlFactory<GuiPanelGlobalCtrl>] attach 0xc293f0 to type GLOBAL
+2016-Sep-23 17:01:49,734 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control GuiPanelModuleCtrl
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc22e60] ExtIoCtrlObject_CALIBRATION@ExtIoCtrlFactory<GuiPanelModuleCtrl> was created
+2016-Sep-23 17:01:49,734 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_CALIBRATION@ExtIoCtrlFactory<GuiPanelModuleCtrl>] attach 0xc22e60 to type CALIBRATION
+2016-Sep-23 17:01:49,734 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control GuiPanelModuleCtrl
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc26420] ExtIoCtrlObject_CONTROLLER@ExtIoCtrlFactory<GuiPanelModuleCtrl> was created
+2016-Sep-23 17:01:49,735 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_CONTROLLER@ExtIoCtrlFactory<GuiPanelModuleCtrl>] attach 0xc26420 to type CONTROLLER
+2016-Sep-23 17:01:49,735 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control GuiPanelModuleCtrl
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc2bbd0] ExtIoCtrlObject_FEB@ExtIoCtrlFactory<GuiPanelModuleCtrl> was created
+2016-Sep-23 17:01:49,735 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_FEB@ExtIoCtrlFactory<GuiPanelModuleCtrl>] attach 0xc2bbd0 to type FEB
+2016-Sep-23 17:01:49,735 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control GuiPanelModuleCtrl
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc2f960] ExtIoCtrlObject_TIMING@ExtIoCtrlFactory<GuiPanelModuleCtrl> was created
+2016-Sep-23 17:01:49,735 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_TIMING@ExtIoCtrlFactory<GuiPanelModuleCtrl>] attach 0xc2f960 to type TIMING
+2016-Sep-23 17:01:49,735 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control GuiPanelModuleCtrl
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc336f0] ExtIoCtrlObject_TBM@ExtIoCtrlFactory<GuiPanelModuleCtrl> was created
+2016-Sep-23 17:01:49,735 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_TBM@ExtIoCtrlFactory<GuiPanelModuleCtrl>] attach 0xc336f0 to type TBM
+2016-Sep-23 17:01:49,735 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control GuiPanelModuleCtrl
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc374f0] ExtIoCtrlObject_INJECTOR@ExtIoCtrlFactory<GuiPanelModuleCtrl> was created
+2016-Sep-23 17:01:49,735 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_INJECTOR@ExtIoCtrlFactory<GuiPanelModuleCtrl>] attach 0xc374f0 to type INJECTOR
+2016-Sep-23 17:01:49,735 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control GuiPanelModuleCtrl
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc3b210] ExtIoCtrlObject_ROD@ExtIoCtrlFactory<GuiPanelModuleCtrl> was created
+2016-Sep-23 17:01:49,735 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_ROD@ExtIoCtrlFactory<GuiPanelModuleCtrl>] attach 0xc3b210 to type ROD
+2016-Sep-23 17:01:49,735 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control GuiPanelModuleCtrl
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc3f0b0] ExtIoCtrlObject_SPAC@ExtIoCtrlFactory<GuiPanelModuleCtrl> was created
+2016-Sep-23 17:01:49,735 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_SPAC@ExtIoCtrlFactory<GuiPanelModuleCtrl>] attach 0xc3f0b0 to type SPAC
+2016-Sep-23 17:01:49,735 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control GuiPanelModuleCtrl
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc42e60] ExtIoCtrlObject_TOWER_BUILDER@ExtIoCtrlFactory<GuiPanelModuleCtrl> was created
+2016-Sep-23 17:01:49,735 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_TOWER_BUILDER@ExtIoCtrlFactory<GuiPanelModuleCtrl>] attach 0xc42e60 to type TOWER_BUILDER
+2016-Sep-23 17:01:49,735 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control GuiPanelModuleCtrl
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc46c20] ExtIoCtrlObject_VIRTUAL_FEB@ExtIoCtrlFactory<GuiPanelModuleCtrl> was created
+2016-Sep-23 17:01:49,735 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_VIRTUAL_FEB@ExtIoCtrlFactory<GuiPanelModuleCtrl>] attach 0xc46c20 to type VIRTUAL_FEB
+2016-Sep-23 17:01:49,736 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control GuiPanelModuleCtrl
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc4a9b0] ExtIoCtrlObject_TTC@ExtIoCtrlFactory<GuiPanelModuleCtrl> was created
+2016-Sep-23 17:01:49,736 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_TTC@ExtIoCtrlFactory<GuiPanelModuleCtrl>] attach 0xc4a9b0 to type TTC
+2016-Sep-23 17:01:49,736 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control GuiPanelModuleCtrl
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc4e740] ExtIoCtrlObject_LTP@ExtIoCtrlFactory<GuiPanelModuleCtrl> was created
+2016-Sep-23 17:01:49,736 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_LTP@ExtIoCtrlFactory<GuiPanelModuleCtrl>] attach 0xc4e740 to type LTP
+2016-Sep-23 17:01:49,736 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control GuiPanelModuleCtrl
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc524d0] ExtIoCtrlObject_BUSYMODULE@ExtIoCtrlFactory<GuiPanelModuleCtrl> was created
+2016-Sep-23 17:01:49,736 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_BUSYMODULE@ExtIoCtrlFactory<GuiPanelModuleCtrl>] attach 0xc524d0 to type BUSYMODULE
+2016-Sep-23 17:01:49,736 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control GuiPanelModuleCtrl
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc56260] ExtIoCtrlObject_LTPI@ExtIoCtrlFactory<GuiPanelModuleCtrl> was created
+2016-Sep-23 17:01:49,736 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_LTPI@ExtIoCtrlFactory<GuiPanelModuleCtrl>] attach 0xc56260 to type LTPI
+2016-Sep-23 17:01:49,736 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control GuiPanelModuleCtrl
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc5a080] ExtIoCtrlObject_ABBA@ExtIoCtrlFactory<GuiPanelModuleCtrl> was created
+2016-Sep-23 17:01:49,736 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_ABBA@ExtIoCtrlFactory<GuiPanelModuleCtrl>] attach 0xc5a080 to type ABBA
+2016-Sep-23 17:01:49,736 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control GuiPanelModuleCtrl
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc5de10] ExtIoCtrlObject_ADC@ExtIoCtrlFactory<GuiPanelModuleCtrl> was created
+2016-Sep-23 17:01:49,736 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_ADC@ExtIoCtrlFactory<GuiPanelModuleCtrl>] attach 0xc5de10 to type ADC
+2016-Sep-23 17:01:49,736 DEBUG_0 [ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(...) at RodCrate/src/controller/RunCtrlActions.cpp:862] 	Create I/O control AbbaIoCtrl
+ExtIoCtrlObject* RunCtrlActions::CreateExtIoCtrlFactory(const RunCtrlActions::IoCtrlInfo&): 		[0xc61fd0] ExtIoCtrlObject_ABBA@ExtIoCtrlFactory<AbbaIoCtrl> was created
+2016-Sep-23 17:01:49,736 DEBUG_0 [bool RunCtrlActions::Attach(...) at RodCrate/src/controller/RunCtrlActions.cpp:526] [ExtIoCtrlObject_ABBA@ExtIoCtrlFactory<AbbaIoCtrl>] attach 0xc61fd0 to type ABBA
+void RunCtrlActions::CreateGlobalThread(): Global configuration filename is "/det/lar/project/config/GlobalParams.dat"
+2016-Sep-23 17:01:49,739 DEBUG_0 [bool RunCtrlActions::SetRunParams(...) at RodCrate/src/controller/RunCtrlActions.cpp:1716] RUN PARAMETERS:
+
+	runNumber  = 309224
+	maxEvents  = 0
+	recEnable  = 1
+	trigType   = 100
+	runType    = larpedestals
+	detMask    = 00000000000000000000000000000000
+	beamType   = 1
+	beamEnergy = 0
+	fileTag    = 
+CreateExtIoCtrl: Create object for type GLOBAL (GLOBAL) with creator @ 0xc12450
+2016-Sep-23 17:01:49,739 DEBUG_0 [ExtIoCtrl* ExtIoCtrlFactory<T>::Create(...) at /det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/src/controller/ExtIoCtrl.h:226] Rcc: 0xa89ca0 object: 0xc69210 Type: "GLOBAL" IoData: "AbbaRequestQ" Daemon: 1 OrderedActions: ""
+2016-Sep-23 17:01:49,739 DEBUG_0 [FragmentCollector::FragmentCollector(...) at Abba/src/FragmentCollector.cpp:160] Destination base port is 20000
+2016-Sep-23 17:01:49,739 DEBUG_0 [FragmentCollector::FragmentCollector(...) at Abba/src/FragmentCollector.cpp:161] Maximum port number is 1
+CreateExtIoCtrl: Create object for type GLOBAL (GLOBAL) with creator @ 0xc293f0
+2016-Sep-23 17:01:49,739 DEBUG_0 [ExtIoCtrl* ExtIoCtrlFactory<T>::Create(...) at /det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/src/controller/ExtIoCtrl.h:226] Rcc: 0xa89ca0 object: 0xc69210 Type: "GLOBAL" IoData: "" Daemon: 1 OrderedActions: ""
+		FragmentCollector<partition:LArABBA> is a daemon.
+		GuiPanelGlobalCtrl<partition:LArABBA> is a daemon.
+virtual bool LARGConfig::BuildRODC(const Larg::dal::LARG_RODC*): Found ROD crate ABBA_Crate
+	Has 4 module(s)
+virtual bool LARGConfig::CreateModule(long unsigned int, const Larg::dal::LARG_Module*): ABBA_18:2@Abba state is 1
+virtual bool LARGConfig::CreateModule(long unsigned int, const Larg::dal::LARG_Module*): call creator () of class Abba
+IpBus::IpBus(const string&)----------- IpBus constructor ------------
+Abba::Abba(uint32_t, const string&)----------- Abba constructor ------------
+CreateExtIoCtrl: Create object for type ABBA (ABBA) with creator @ 0xc5a080
+2016-Sep-23 17:01:49,743 DEBUG_0 [ExtIoCtrl* ExtIoCtrlFactory<T>::Create(...) at /det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/src/controller/ExtIoCtrl.h:226] Rcc: 0xa89ca0 object: 0xc786d0 Type: "ABBA" IoData: "" Daemon: 1 OrderedActions: ""
+CreateExtIoCtrl: Create object for type ABBA (ABBA) with creator @ 0xc61fd0
+2016-Sep-23 17:01:49,743 DEBUG_0 [ExtIoCtrl* ExtIoCtrlFactory<T>::Create(...) at /det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/src/controller/ExtIoCtrl.h:226] Rcc: 0xa89ca0 object: 0xc786d0 Type: "ABBA" IoData: "AbbaRequestQ" Daemon: 1 OrderedActions: ""
+		GuiPanelModuleCtrl<ABBA_18:2> is a daemon.
+		AbbaIoCtrl<ABBA_18:2> is a daemon.
+2016-Sep-23 17:01:49,743 DEBUG_0 [bool RunCtrlActions::AddControllable(...) at RodCrate/src/controller/RunCtrlActions.cpp:245] Add controllable object ABBA_18:2@Abba
+virtual bool LARGConfig::CreateModule(long unsigned int, const Larg::dal::LARG_Module*): ABBA_19:1@Abba state is 1
+virtual bool LARGConfig::CreateModule(long unsigned int, const Larg::dal::LARG_Module*): call creator () of class Abba
+IpBus::IpBus(const string&)----------- IpBus constructor ------------
+Abba::Abba(uint32_t, const string&)----------- Abba constructor ------------
+CreateExtIoCtrl: Create object for type ABBA (ABBA) with creator @ 0xc5a080
+2016-Sep-23 17:01:49,745 DEBUG_0 [ExtIoCtrl* ExtIoCtrlFactory<T>::Create(...) at /det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/src/controller/ExtIoCtrl.h:226] Rcc: 0xa89ca0 object: 0xc92390 Type: "ABBA" IoData: "" Daemon: 1 OrderedActions: ""
+CreateExtIoCtrl: Create object for type ABBA (ABBA) with creator @ 0xc61fd0
+2016-Sep-23 17:01:49,745 DEBUG_0 [ExtIoCtrl* ExtIoCtrlFactory<T>::Create(...) at /det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/src/controller/ExtIoCtrl.h:226] Rcc: 0xa89ca0 object: 0xc92390 Type: "ABBA" IoData: "AbbaRequestQ" Daemon: 1 OrderedActions: ""
+		GuiPanelModuleCtrl<ABBA_19:1> is a daemon.
+		AbbaIoCtrl<ABBA_19:1> is a daemon.
+2016-Sep-23 17:01:49,745 DEBUG_0 [bool RunCtrlActions::AddControllable(...) at RodCrate/src/controller/RunCtrlActions.cpp:245] Add controllable object ABBA_19:1@Abba
+virtual bool LARGConfig::CreateModule(long unsigned int, const Larg::dal::LARG_Module*): ABBA_19:2@Abba state is 1
+virtual bool LARGConfig::CreateModule(long unsigned int, const Larg::dal::LARG_Module*): call creator () of class Abba
+IpBus::IpBus(const string&)----------- IpBus constructor ------------
+Abba::Abba(uint32_t, const string&)----------- Abba constructor ------------
+CreateExtIoCtrl: Create object for type ABBA (ABBA) with creator @ 0xc5a080
+2016-Sep-23 17:01:49,748 DEBUG_0 [ExtIoCtrl* ExtIoCtrlFactory<T>::Create(...) at /det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/src/controller/ExtIoCtrl.h:226] Rcc: 0xa89ca0 object: 0xca43a0 Type: "ABBA" IoData: "" Daemon: 1 OrderedActions: ""
+CreateExtIoCtrl: Create object for type ABBA (ABBA) with creator @ 0xc61fd0
+2016-Sep-23 17:01:49,748 DEBUG_0 [ExtIoCtrl* ExtIoCtrlFactory<T>::Create(...) at /det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/src/controller/ExtIoCtrl.h:226] Rcc: 0xa89ca0 object: 0xca43a0 Type: "ABBA" IoData: "AbbaRequestQ" Daemon: 1 OrderedActions: ""
+		GuiPanelModuleCtrl<ABBA_19:2> is a daemon.
+		AbbaIoCtrl<ABBA_19:2> is a daemon.
+2016-Sep-23 17:01:49,748 DEBUG_0 [bool RunCtrlActions::AddControllable(...) at RodCrate/src/controller/RunCtrlActions.cpp:245] Add controllable object ABBA_19:2@Abba
+virtual bool LARGConfig::CreateModule(long unsigned int, const Larg::dal::LARG_Module*): ABBA_20:2@Abba state is 1
+virtual bool LARGConfig::CreateModule(long unsigned int, const Larg::dal::LARG_Module*): call creator () of class Abba
+IpBus::IpBus(const string&)----------- IpBus constructor ------------
+Abba::Abba(uint32_t, const string&)----------- Abba constructor ------------
+CreateExtIoCtrl: Create object for type ABBA (ABBA) with creator @ 0xc5a080
+2016-Sep-23 17:01:49,750 DEBUG_0 [ExtIoCtrl* ExtIoCtrlFactory<T>::Create(...) at /det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/src/controller/ExtIoCtrl.h:226] Rcc: 0xa89ca0 object: 0xcb6210 Type: "ABBA" IoData: "" Daemon: 1 OrderedActions: ""
+CreateExtIoCtrl: Create object for type ABBA (ABBA) with creator @ 0xc61fd0
+2016-Sep-23 17:01:49,750 DEBUG_0 [ExtIoCtrl* ExtIoCtrlFactory<T>::Create(...) at /det/lar/project/LargOnline/releases/LargOnline-611-31-00/RodCrate/v11r0p2/src/controller/ExtIoCtrl.h:226] Rcc: 0xa89ca0 object: 0xcb6210 Type: "ABBA" IoData: "AbbaRequestQ" Daemon: 1 OrderedActions: ""
+		GuiPanelModuleCtrl<ABBA_20:2> is a daemon.
+		AbbaIoCtrl<ABBA_20:2> is a daemon.
+2016-Sep-23 17:01:49,750 DEBUG_0 [bool RunCtrlActions::AddControllable(...) at RodCrate/src/controller/RunCtrlActions.cpp:245] Add controllable object ABBA_20:2@Abba
+		Controls 0 HFEC crate(s)
+2016-Sep-23 17:01:49,751 DEBUG_0 [Larg::Process::Process(...) at RodCrate/src/monitoring/Process.cpp:68] IS name is RunParams.ABBA_Crate.Software.Process.ABBA_Controller
+2016-Sep-23 17:01:49,752 DEBUG_0 [virtual void RccRunnable::Setup(...) at RodCrate/src/monitoring/RccRunnable.cpp:228] IS name is RunParams.ABBA_Crate.Software.Thread.main<ABBA_Controller>
+2016-Sep-23 17:01:49,753 DEBUG_0 [virtual void RccRunnable::Setup(...) at RodCrate/src/monitoring/RccRunnable.cpp:228] IS name is RunParams.ABBA_Crate.Software.Thread.FragmentCollector<partition:LArABBA>
+PluginFactory: loading TCPDataOut
+TCPDataOut:: sending data to pc-lar-ptm-db-03, destination port 20000 every 1 calls to sendData
+2016-Sep-23 17:01:49,758 DEBUG_0 [bool RunCtrlActions::AddControllable(...) at RodCrate/src/controller/RunCtrlActions.cpp:229] Add controllable object LArABBA@Larg::OnlineObject
+Thread::EntryPoint (void *): Call user's main function of FragmentCollector<partition:LArABBA>
+[139942620747520] New thread "FragmentCollector<partition:LArABBA>" was started
+2016-Sep-23 17:01:49,759 DEBUG_0 [virtual void RccRunnable::Setup(...) at RodCrate/src/monitoring/RccRunnable.cpp:228] IS name is RunParams.ABBA_Crate.Software.Thread.GuiPanelGlobalCtrl<partition:LArABBA>
+virtual void GuiPanelGlobalCtrl::Prologue(): IS PARAMS name = RunParams.LArABBA.GLOBAL.PARAMS
+virtual void GuiPanelGlobalCtrl::Prologue(): IS CONFIG FILE name = RunParams.LArABBA.GLOBAL.CONFIG_FILE
+Thread::EntryPoint (void *): Call user's main function of GuiPanelGlobalCtrl<partition:LArABBA>
+[139942618646272] New thread "GuiPanelGlobalCtrl<partition:LArABBA>" was started
+2016-Sep-23 17:01:49,762 DEBUG_0 [virtual void RccRunnable::Setup(...) at RodCrate/src/monitoring/RccRunnable.cpp:228] IS name is RunParams.ABBA_Crate.Software.Thread.GuiPanelModuleCtrl<ABBA_18:2>
+virtual void GuiPanelModuleCtrl::Prologue(): IS STATUS name = RunParams.ABBA_Crate.ABBA_18:2.STATUS
+virtual void GuiPanelModuleCtrl::Prologue(): IS PARAMS name = RunParams.ABBA_Crate.ABBA_18:2.PARAMS
+virtual void GuiPanelModuleCtrl::Prologue(): IS CONFIG FILE name = RunParams.ABBA_Crate.ABBA_18:2.CONFIG_FILE
+virtual void GuiPanelModuleCtrl::Prologue(): IS REFRESH_GUTS name = RunParams.ABBA_Crate.ABBA_18:2.REFRESH_GUTS
+virtual void GuiPanelModuleCtrl::Prologue(): IS GUTS name = RunParams.ABBA_Crate.ABBA_18:2.GUTS
+virtual void GuiPanelModuleCtrl::Prologue(): IS PUBLISH_STATUS_FROM_STATE name = RunParams.ABBA_Crate.ABBA_18:2.PUBLISH_STATUS_FROM_STATE
+Thread::EntryPoint (void *): Call user's main function of GuiPanelModuleCtrl<ABBA_18:2>
+[139942612342528] New thread "GuiPanelModuleCtrl<ABBA_18:2>" was started
+2016-Sep-23 17:01:49,766 DEBUG_0 [virtual void RccRunnable::Setup(...) at RodCrate/src/monitoring/RccRunnable.cpp:228] IS name is RunParams.ABBA_Crate.Software.Thread.AbbaIoCtrl<ABBA_18:2>
+2016-Sep-23 17:01:49,766 DEBUG_0 [bool RunCtrlActions::AddControllable(...) at RodCrate/src/controller/RunCtrlActions.cpp:245] Add controllable object DAQ_Object<ABBA_18:2>@DaqObject
+Thread::EntryPoint (void *): Call user's main function of AbbaIoCtrl<ABBA_18:2>
+[139942610241280] New thread "AbbaIoCtrl<ABBA_18:2>" was started
+DEBUG : COUCOU Alexis
+2016-Sep-23 17:01:49,767 DEBUG_0 [virtual void RccRunnable::Setup(...) at RodCrate/src/monitoring/RccRunnable.cpp:228] IS name is RunParams.ABBA_Crate.Software.Thread.GuiPanelModuleCtrl<ABBA_19:1>
+virtual void GuiPanelModuleCtrl::Prologue(): IS STATUS name = RunParams.ABBA_Crate.ABBA_19:1.STATUS
+virtual void GuiPanelModuleCtrl::Prologue(): IS PARAMS name = RunParams.ABBA_Crate.ABBA_19:1.PARAMS
+virtual void GuiPanelModuleCtrl::Prologue(): IS CONFIG FILE name = RunParams.ABBA_Crate.ABBA_19:1.CONFIG_FILE
+virtual void GuiPanelModuleCtrl::Prologue(): IS REFRESH_GUTS name = RunParams.ABBA_Crate.ABBA_19:1.REFRESH_GUTS
+virtual void GuiPanelModuleCtrl::Prologue(): IS GUTS name = RunParams.ABBA_Crate.ABBA_19:1.GUTS
+virtual void GuiPanelModuleCtrl::Prologue(): IS PUBLISH_STATUS_FROM_STATE name = RunParams.ABBA_Crate.ABBA_19:1.PUBLISH_STATUS_FROM_STATE
+Thread::EntryPoint (void *): Call user's main function of GuiPanelModuleCtrl<ABBA_19:1>
+[139942608140032] New thread "GuiPanelModuleCtrl<ABBA_19:1>" was started
+2016-Sep-23 17:01:49,770 DEBUG_0 [virtual void RccRunnable::Setup(...) at RodCrate/src/monitoring/RccRunnable.cpp:228] IS name is RunParams.ABBA_Crate.Software.Thread.AbbaIoCtrl<ABBA_19:1>
+2016-Sep-23 17:01:49,770 DEBUG_0 [bool RunCtrlActions::AddControllable(...) at RodCrate/src/controller/RunCtrlActions.cpp:245] Add controllable object DAQ_Object<ABBA_19:1>@DaqObject
+Thread::EntryPoint (void *): Call user's main function of AbbaIoCtrl<ABBA_19:1>
+[139942606038784] New thread "AbbaIoCtrl<ABBA_19:1>" was started
+DEBUG : COUCOU Alexis
+2016-Sep-23 17:01:49,771 DEBUG_0 [virtual void RccRunnable::Setup(...) at RodCrate/src/monitoring/RccRunnable.cpp:228] IS name is RunParams.ABBA_Crate.Software.Thread.GuiPanelModuleCtrl<ABBA_19:2>
+virtual void GuiPanelModuleCtrl::Prologue(): IS STATUS name = RunParams.ABBA_Crate.ABBA_19:2.STATUS
+virtual void GuiPanelModuleCtrl::Prologue(): IS PARAMS name = RunParams.ABBA_Crate.ABBA_19:2.PARAMS
+virtual void GuiPanelModuleCtrl::Prologue(): IS CONFIG FILE name = RunParams.ABBA_Crate.ABBA_19:2.CONFIG_FILE
+virtual void GuiPanelModuleCtrl::Prologue(): IS REFRESH_GUTS name = RunParams.ABBA_Crate.ABBA_19:2.REFRESH_GUTS
+virtual void GuiPanelModuleCtrl::Prologue(): IS GUTS name = RunParams.ABBA_Crate.ABBA_19:2.GUTS
+virtual void GuiPanelModuleCtrl::Prologue(): IS PUBLISH_STATUS_FROM_STATE name = RunParams.ABBA_Crate.ABBA_19:2.PUBLISH_STATUS_FROM_STATE
+Thread::EntryPoint (void *): Call user's main function of GuiPanelModuleCtrl<ABBA_19:2>
+[139942603937536] New thread "GuiPanelModuleCtrl<ABBA_19:2>" was started
+2016-Sep-23 17:01:49,774 DEBUG_0 [virtual void RccRunnable::Setup(...) at RodCrate/src/monitoring/RccRunnable.cpp:228] IS name is RunParams.ABBA_Crate.Software.Thread.AbbaIoCtrl<ABBA_19:2>
+2016-Sep-23 17:01:49,774 DEBUG_0 [bool RunCtrlActions::AddControllable(...) at RodCrate/src/controller/RunCtrlActions.cpp:245] Add controllable object DAQ_Object<ABBA_19:2>@DaqObject
+Thread::EntryPoint (void *): Call user's main function of AbbaIoCtrl<ABBA_19:2>
+[139942601836288] New thread "AbbaIoCtrl<ABBA_19:2>" was started
+DEBUG : COUCOU Alexis
+2016-Sep-23 17:01:49,775 DEBUG_0 [virtual void RccRunnable::Setup(...) at RodCrate/src/monitoring/RccRunnable.cpp:228] IS name is RunParams.ABBA_Crate.Software.Thread.GuiPanelModuleCtrl<ABBA_20:2>
+virtual void GuiPanelModuleCtrl::Prologue(): IS STATUS name = RunParams.ABBA_Crate.ABBA_20:2.STATUS
+virtual void GuiPanelModuleCtrl::Prologue(): IS PARAMS name = RunParams.ABBA_Crate.ABBA_20:2.PARAMS
+virtual void GuiPanelModuleCtrl::Prologue(): IS CONFIG FILE name = RunParams.ABBA_Crate.ABBA_20:2.CONFIG_FILE
+virtual void GuiPanelModuleCtrl::Prologue(): IS REFRESH_GUTS name = RunParams.ABBA_Crate.ABBA_20:2.REFRESH_GUTS
+virtual void GuiPanelModuleCtrl::Prologue(): IS GUTS name = RunParams.ABBA_Crate.ABBA_20:2.GUTS
+virtual void GuiPanelModuleCtrl::Prologue(): IS PUBLISH_STATUS_FROM_STATE name = RunParams.ABBA_Crate.ABBA_20:2.PUBLISH_STATUS_FROM_STATE
+Thread::EntryPoint (void *): Call user's main function of GuiPanelModuleCtrl<ABBA_20:2>
+[139942599735040] New thread "GuiPanelModuleCtrl<ABBA_20:2>" was started
+2016-Sep-23 17:01:49,778 DEBUG_0 [virtual void RccRunnable::Setup(...) at RodCrate/src/monitoring/RccRunnable.cpp:228] IS name is RunParams.ABBA_Crate.Software.Thread.AbbaIoCtrl<ABBA_20:2>
+2016-Sep-23 17:01:49,778 DEBUG_0 [bool RunCtrlActions::AddControllable(...) at RodCrate/src/controller/RunCtrlActions.cpp:245] Add controllable object DAQ_Object<ABBA_20:2>@DaqObject
+Thread::EntryPoint (void *): Call user's main function of AbbaIoCtrl<ABBA_20:2>
+[139942597633792] New thread "AbbaIoCtrl<ABBA_20:2>" was started
+DEBUG : COUCOU Alexis
+2016-Sep-23 17:01:49,779 DEBUG_0 [virtual void RccRunnable::Setup(...) at RodCrate/src/monitoring/RccRunnable.cpp:228] IS name is RunParams.ABBA_Crate.Software.Thread.SoftwareMonitoring
+Thread::EntryPoint (void *): Call user's main function of SoftwareMonitoring
+[139942595532544] New thread "SoftwareMonitoring" was started
+2016-Sep-23 17:01:49,788 LOG [static void IPCCore::init(...) at ipc/src/core.cc:206] IPCCore has been already initialized
+2016-Sep-23 17:02:16,609 INFO [virtual void RunCrateCtrlActions::subTransition(...) at RodCrate/src/controller/RunCrateCtrlActions.cpp:300] Transition "SUB_CONFIGURE_READ_DB" has been done
+virtual bool IpBus::Init_()----------- IpBus Init ------------
+virtual bool IpBus::Init_()----------- IpBus Init ------------
+virtual bool IpBus::Init_()----------- IpBus Init ------------
+virtual bool IpBus::Init_()----------- IpBus Init ------------
+2016-Sep-23 17:02:16,679 INFO [virtual void RunCrateCtrlActions::subTransition(...) at RodCrate/src/controller/RunCrateCtrlActions.cpp:300] Transition "SUB_CONFIGURE_1" has been done
+2016-Sep-23 17:02:16,693 INFO [virtual void RunCrateCtrlActions::subTransition(...) at RodCrate/src/controller/RunCrateCtrlActions.cpp:300] Transition "SUB_CONFIGURE_2" has been done
+2016-Sep-23 17:02:16,704 INFO [virtual void RunCrateCtrlActions::subTransition(...) at RodCrate/src/controller/RunCrateCtrlActions.cpp:300] Transition "SUB_CONFIGURE_3" has been done
+virtual bool Abba::Load_()----------- Abba Load ------------
+virtual bool Abba::Load_()----------- Abba Load ------------
+virtual bool Abba::Load_()----------- Abba Load ------------
+virtual bool Abba::Load_()----------- Abba Load ------------
+2016-Sep-23 17:02:16,720 INFO [virtual void RunCrateCtrlActions::configure(...) at RodCrate/src/controller/RunCrateCtrlActions.cpp:252] Transition "CONFIGURE" has been done
+virtual bool Abba::Config_()----------- Abba Config ------------
+bool IpBus::ipBusConfig()----------- IpBus Config ------------
+virtual bool Abba::Config_() Numbers of locked fibres below which warnings/errors are thrown:  Ppod0=7/5 Ppod1=7/5
+2016-Sep-23 17:02:17,742 INFO [virtual bool Abba::Config_(...) at Abba/src/Abba.cpp:286] [] object 'ABBA_18:2': ipbusudp-2.0://10.145.91.18:2 IpBus configuration done !
+2016-Sep-23 17:02:17,743 INFO [virtual bool Abba::Config_(...) at Abba/src/Abba.cpp:364] [] object 'ABBA_18:2':  Numbers of locked fibres below which warnings/errors are thrown:  Ppod0=7/5 Ppod1=7/5
+
+2016-Sep-23 17:02:17,743 INFO [virtual bool Abba::Config_(...) at Abba/src/Abba.cpp:367] [] object 'ABBA_18:2': ipbusudp-2.0://10.145.91.18:2 AbbaConfiguration done !
+virtual bool Abba::Config_()----------- Abba Config ------------
+bool IpBus::ipBusConfig()----------- IpBus Config ------------
+virtual bool Abba::Config_() Numbers of locked fibres below which warnings/errors are thrown:  Ppod0=7/5 Ppod1=7/5
+2016-Sep-23 17:02:18,747 INFO [virtual bool Abba::Config_(...) at Abba/src/Abba.cpp:286] [] object 'ABBA_19:1': ipbusudp-2.0://10.145.91.19:1 IpBus configuration done !
+2016-Sep-23 17:02:18,748 INFO [virtual bool Abba::Config_(...) at Abba/src/Abba.cpp:364] [] object 'ABBA_19:1':  Numbers of locked fibres below which warnings/errors are thrown:  Ppod0=7/5 Ppod1=7/5
+
+2016-Sep-23 17:02:18,748 INFO [virtual bool Abba::Config_(...) at Abba/src/Abba.cpp:367] [] object 'ABBA_19:1': ipbusudp-2.0://10.145.91.19:1 AbbaConfiguration done !
+virtual bool Abba::Config_()----------- Abba Config ------------
+bool IpBus::ipBusConfig()----------- IpBus Config ------------
+virtual bool Abba::Config_() Numbers of locked fibres below which warnings/errors are thrown:  Ppod0=7/5 Ppod1=7/5
+2016-Sep-23 17:02:19,752 INFO [virtual bool Abba::Config_(...) at Abba/src/Abba.cpp:286] [] object 'ABBA_19:2': ipbusudp-2.0://10.145.91.19:2 IpBus configuration done !
+2016-Sep-23 17:02:19,753 INFO [virtual bool Abba::Config_(...) at Abba/src/Abba.cpp:364] [] object 'ABBA_19:2':  Numbers of locked fibres below which warnings/errors are thrown:  Ppod0=7/5 Ppod1=7/5
+
+2016-Sep-23 17:02:19,753 INFO [virtual bool Abba::Config_(...) at Abba/src/Abba.cpp:367] [] object 'ABBA_19:2': ipbusudp-2.0://10.145.91.19:2 AbbaConfiguration done !
+virtual bool Abba::Config_()----------- Abba Config ------------
+bool IpBus::ipBusConfig()----------- IpBus Config ------------
+virtual bool Abba::Config_() Numbers of locked fibres below which warnings/errors are thrown:  Ppod0=7/5 Ppod1=7/5
+2016-Sep-23 17:02:20,757 INFO [virtual bool Abba::Config_(...) at Abba/src/Abba.cpp:286] [] object 'ABBA_20:2': ipbusudp-2.0://10.145.91.20:2 IpBus configuration done !
+2016-Sep-23 17:02:20,757 INFO [virtual bool Abba::Config_(...) at Abba/src/Abba.cpp:364] [] object 'ABBA_20:2':  Numbers of locked fibres below which warnings/errors are thrown:  Ppod0=7/5 Ppod1=7/5
+
+2016-Sep-23 17:02:20,758 INFO [virtual bool Abba::Config_(...) at Abba/src/Abba.cpp:367] [] object 'ABBA_20:2': ipbusudp-2.0://10.145.91.20:2 AbbaConfiguration done !
+: Node ID is 0 for object ABBA_18:2
+: Node ID is 0 for object ABBA_19:1
+: Node ID is 0 for object ABBA_19:2
+: Node ID is 0 for object ABBA_20:2
+m_destinationNode=<pc-lar-ptm-db-03>
+TCPDataOut : connected to pc-lar-ptm-db-03 port 20000
+2016-Sep-23 17:02:20,770 INFO [virtual void RunCtrlActions::connect(...) at RodCrate/src/controller/RunCtrlActions.cpp:1939] Transition "CONNECT" has been done
+2016-Sep-23 17:02:25,706 DEBUG_0 [bool RunCtrlActions::SetRunParams(...) at RodCrate/src/controller/RunCtrlActions.cpp:1716] RUN PARAMETERS:
+
+	runNumber  = 309229
+	maxEvents  = 0
+	recEnable  = 1
+	trigType   = 100
+	runType    = physics
+	detMask    = 00000000000000000000000000000000
+	beamType   = 1
+	beamEnergy = 0
+	fileTag    = 
+2016-Sep-23 17:02:25,707 DEBUG_0 [virtual void RccRunnable::Setup(...) at RodCrate/src/monitoring/RccRunnable.cpp:228] IS name is RunParams.ABBA_Crate.Software.Thread.HardwareMonitoring
+Thread::EntryPoint (void *): Call user's main function of HardwareMonitoring
+[139941038200576] New thread "HardwareMonitoring" was started
+2016-Sep-23 17:02:25,708 DEBUG_0 [virtual void RccRunnable::Setup(...) at RodCrate/src/monitoring/RccRunnable.cpp:228] IS name is RunParams.ABBA_Crate.Software.Thread.HistogramMonitoring
+Thread::EntryPoint (void *): Call user's main function of HistogramMonitoring
+[139941036099328] New thread "HistogramMonitoring" was started
+2016-Sep-23 17:02:25,709 DEBUG_0 [virtual void RccRunnable::Setup(...) at RodCrate/src/monitoring/RccRunnable.cpp:228] IS name is RunParams.ABBA_Crate.Software.Thread.InterruptDispatcher
+Thread::EntryPoint (void *): Call user's main function of InterruptDispatcher
+[139941033998080] New thread "InterruptDispatcher" was started
+2016-Sep-23 17:02:25,710 DEBUG_0 [virtual void RccRunnable::Setup(...) at RodCrate/src/monitoring/RccRunnable.cpp:228] IS name is RunParams.ABBA_Crate.Software.Thread.BusErrorCatcher
+Thread::EntryPoint (void *): Call user's main function of BusErrorCatcher
+[139941031896832] New thread "BusErrorCatcher" was started
+virtual bool Abba::PrepareForRun_()----------- Abba PrepareForRun ------------
+virtual bool Abba::PrepareForRun_()----------- Abba PrepareForRun ------------
+virtual bool Abba::PrepareForRun_()----------- Abba PrepareForRun ------------
+virtual bool Abba::PrepareForRun_()----------- Abba PrepareForRun ------------
+2016-Sep-23 17:02:25,729 INFO [virtual void RunCrateCtrlActions::subTransition(...) at RodCrate/src/controller/RunCrateCtrlActions.cpp:300] Transition "SUB_START_1" has been done
+virtual bool Abba::Start_()----------- Abba Start ------------
+virtual bool Abba::Start_()----------- Abba Start ------------
+virtual bool Abba::Start_()----------- Abba Start ------------
+virtual bool Abba::Start_()----------- Abba Start ------------
+2016-Sep-23 17:02:25,741 DEBUG_0 [virtual bool DaqObject::Start_(...) at Abba/src/AbbaIoCtrl.cpp:748] DAQ started.
+2016-Sep-23 17:02:25,742 DEBUG_0 [virtual bool DaqObject::Start_(...) at Abba/src/AbbaIoCtrl.cpp:748] DAQ started.
+2016-Sep-23 17:02:25,742 DEBUG_0 [virtual bool DaqObject::Start_(...) at Abba/src/AbbaIoCtrl.cpp:748] DAQ started.
+2016-Sep-23 17:02:25,743 DEBUG_0 [virtual bool DaqObject::Start_(...) at Abba/src/AbbaIoCtrl.cpp:748] DAQ started.
+2016-Sep-23 17:02:25,743 DEBUG_0 [virtual void RccRunnable::Setup(...) at RodCrate/src/monitoring/RccRunnable.cpp:228] IS name is RunParams.ABBA_Crate.Software.Thread.Thread_port_20000
+Thread::EntryPoint (void *): Call user's main function of Thread_port_20000
+[139941029795584] New thread "Thread_port_20000" was started
+2016-Sep-23 17:02:25,745 INFO [virtual void RunCrateCtrlActions::prepareForRun(...) at RodCrate/src/controller/RunCrateCtrlActions.cpp:266] Transition "START" has been done
+[0;31m23-09-16 17:33:08.550512 [7f46b71f8700] ERROR - Timeout (1000 milliseconds) occurred for UDP receive from target with URI: ipbusudp-2.0://10.145.91.18:2[0m
+virtual bool Abba::Stop_()----------- Abba Stop ------------
+virtual bool Abba::Stop_()----------- Abba Stop ------------
+virtual bool Abba::Stop_()----------- Abba Stop ------------
+virtual bool Abba::Stop_()----------- Abba Stop ------------
+2016-Sep-23 17:56:37,479 INFO [virtual void RunCtrlActions::stopROIB(...) at RodCrate/src/controller/RunCtrlActions.cpp:2037] Transition "STOPROIB" has been done
+2016-Sep-23 17:56:37,498 DEBUG_0 [virtual bool DaqObject::StopFE_(...) at Abba/src/AbbaIoCtrl.cpp:767] DAQ stopped.
+2016-Sep-23 17:56:37,499 DEBUG_0 [virtual bool DaqObject::StopFE_(...) at Abba/src/AbbaIoCtrl.cpp:767] DAQ stopped.
+2016-Sep-23 17:56:37,499 DEBUG_0 [virtual bool DaqObject::StopFE_(...) at Abba/src/AbbaIoCtrl.cpp:767] DAQ stopped.
+2016-Sep-23 17:56:37,500 DEBUG_0 [virtual bool DaqObject::StopFE_(...) at Abba/src/AbbaIoCtrl.cpp:767] DAQ stopped.
+2016-Sep-23 17:56:37,501 INFO [virtual void RunCtrlActions::stopDC(...) at RodCrate/src/controller/RunCtrlActions.cpp:2049] Transition "STOPDC" has been done
+2016-Sep-23 17:56:37,613 INFO [virtual void RunCtrlActions::stopArchiving(...) at RodCrate/src/controller/RunCtrlActions.cpp:2061] Transition "STOPARCHIVING" has been done
+virtual bool Abba::Unconfig_()----------- Abba UnConfig ------------
+virtual bool Abba::Unconfig_()----------- Abba UnConfig ------------
+virtual bool Abba::Unconfig_()----------- Abba UnConfig ------------
+virtual bool Abba::Unconfig_()----------- Abba UnConfig ------------
+2016-Sep-23 17:56:42,198 INFO [virtual void RunCtrlActions::disconnect(...) at RodCrate/src/controller/RunCtrlActions.cpp:1950] Transition "DISCONNECT" has been done
+2016-Sep-23 17:56:42,199 LOG [void daq::rc::ItemCtrlImpl::fsmTransitionDone(...) at RunControl/src/ItemCtrl/ItemCtrlImpl.cxx:604] Pausing the execution of periodic alarms
+2016-Sep-23 17:56:42,199 LOG [void daq::rc::ItemCtrlImpl::fsmTransitionDone(...) at RunControl/src/ItemCtrl/ItemCtrlImpl.cxx:606] Periodic alarms have been suspended
+virtual bool Abba::Unload_()----------- Abba Unload ------------
+virtual bool Abba::Unload_()----------- Abba Unload ------------
+virtual bool Abba::Unload_()----------- Abba Unload ------------
+virtual bool Abba::Unload_()----------- Abba Unload ------------
+2016-Sep-23 17:56:45,631 LOG [virtual void RunCtrlActions::onExit(...) at RodCrate/src/controller/RunCtrlActions.cpp:1893] Exiting while in state 'INITIAL'
+bool RunCtrlActions::RemoveObject(Larg::OnlineObject*, bool): delete HardwareMonitoring@RccThread object
+bool RunCtrlActions::RemoveObject(Larg::OnlineObject*, bool): delete HistogramMonitoring@RccThread object
+bool RunCtrlActions::RemoveObject(Larg::OnlineObject*, bool): delete InterruptDispatcher@RccThread object
+bool RunCtrlActions::RemoveObject(Larg::OnlineObject*, bool): delete BusErrorCatcher@RccThread object
+bool RunCtrlActions::RemoveObject(Larg::OnlineObject*, bool): delete FragmentCollector<partition:LArABBA>@RccThread object
+bool RunCtrlActions::RemoveObject(Larg::OnlineObject*, bool): delete GuiPanelGlobalCtrl<partition:LArABBA>@RccThread object
+bool RunCtrlActions::RemoveObject(Larg::OnlineObject*, bool): delete GuiPanelModuleCtrl<ABBA_18:2>@RccThread object
+bool RunCtrlActions::RemoveObject(Larg::OnlineObject*, bool): delete AbbaIoCtrl<ABBA_18:2>@RccThread object
+bool RunCtrlActions::RemoveObject(Larg::OnlineObject*, bool): delete GuiPanelModuleCtrl<ABBA_19:1>@RccThread object
+bool RunCtrlActions::RemoveObject(Larg::OnlineObject*, bool): delete AbbaIoCtrl<ABBA_19:1>@RccThread object
+bool RunCtrlActions::RemoveObject(Larg::OnlineObject*, bool): delete GuiPanelModuleCtrl<ABBA_19:2>@RccThread object
+bool RunCtrlActions::RemoveObject(Larg::OnlineObject*, bool): delete AbbaIoCtrl<ABBA_19:2>@RccThread object
+bool RunCtrlActions::RemoveObject(Larg::OnlineObject*, bool): delete GuiPanelModuleCtrl<ABBA_20:2>@RccThread object
+bool RunCtrlActions::RemoveObject(Larg::OnlineObject*, bool): delete AbbaIoCtrl<ABBA_20:2>@RccThread object
+bool RunCtrlActions::RemoveObject(Larg::OnlineObject*, bool): delete SoftwareMonitoring@RccThread object
+bool RunCtrlActions::RemoveObject(Larg::OnlineObject*, bool): delete main<ABBA_Controller>@RccProcess object
+virtual void RunCtrlActions::Clean(): call destructor for MessageInterceptor Message interceptor object
+virtual void RunCtrlActions::Clean(): call destructor for BusErrorMonitor VMEbus error monitor object
+virtual void RunCtrlActions::Clean(): call destructor for AbbaRequestQ AbbaRequestQ object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<FragmentCollector> ExtIoCtrlObject_GLOBAL object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<GuiPanelGlobalCtrl> ExtIoCtrlObject_GLOBAL object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<GuiPanelModuleCtrl> ExtIoCtrlObject_CALIBRATION object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<GuiPanelModuleCtrl> ExtIoCtrlObject_CONTROLLER object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<GuiPanelModuleCtrl> ExtIoCtrlObject_FEB object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<GuiPanelModuleCtrl> ExtIoCtrlObject_TIMING object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<GuiPanelModuleCtrl> ExtIoCtrlObject_TBM object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<GuiPanelModuleCtrl> ExtIoCtrlObject_INJECTOR object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<GuiPanelModuleCtrl> ExtIoCtrlObject_ROD object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<GuiPanelModuleCtrl> ExtIoCtrlObject_SPAC object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<GuiPanelModuleCtrl> ExtIoCtrlObject_TOWER_BUILDER object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<GuiPanelModuleCtrl> ExtIoCtrlObject_VIRTUAL_FEB object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<GuiPanelModuleCtrl> ExtIoCtrlObject_TTC object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<GuiPanelModuleCtrl> ExtIoCtrlObject_LTP object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<GuiPanelModuleCtrl> ExtIoCtrlObject_BUSYMODULE object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<GuiPanelModuleCtrl> ExtIoCtrlObject_LTPI object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<GuiPanelModuleCtrl> ExtIoCtrlObject_ABBA object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<GuiPanelModuleCtrl> ExtIoCtrlObject_ADC object
+virtual void RunCtrlActions::Clean(): call destructor for ExtIoCtrlFactory<AbbaIoCtrl> ExtIoCtrlObject_ABBA object
+virtual void RunCtrlActions::Clean(): call destructor for Larg::OnlineObject LArABBA object
+virtual void RunCtrlActions::Clean(): call destructor for Abba ABBA_18:2 object
+virtual void RunCtrlActions::Clean(): call destructor for Abba ABBA_19:1 object
+virtual void RunCtrlActions::Clean(): call destructor for Abba ABBA_19:2 object
+virtual void RunCtrlActions::Clean(): call destructor for Abba ABBA_20:2 object
