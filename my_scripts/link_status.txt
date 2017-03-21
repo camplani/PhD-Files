@@ -1,0 +1,191 @@
+	runNumber  = 309237
+	runNumber  = 309286
+TIMESTAMP: 2016-Sep-24 10:07:46,936 INFO [virtual void RunCtrlActions::connect(...) at RodCrate/src/controller/RunCtrlActions.cpp:1939] Transition "CONNECT" has been done
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod1 Fibre Rx8 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.20:2 In Ppod1 Fibre Rx10 lost locked state.
+
+
+	runNumber  = 309287
+	runNumber  = 309308
+	runNumber  = 309310
+	runNumber  = 309312
+	runNumber  = 309315
+	runNumber  = 309347
+	runNumber  = 309353
+	runNumber  = 309355
+	runNumber  = 309374
+TIMESTAMP: 2016-Sep-26 06:03:32,817 INFO [virtual void RunCtrlActions::stopArchiving(...) at RodCrate/src/controller/RunCtrlActions.cpp:2061] Transition "STOPARCHIVING" has been done
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.20:2 In Ppod1 Fibre Rx2 lost locked state.
+
+
+	runNumber  = 309376
+	runNumber  = 309392
+TIMESTAMP: [0;31m27-09-16 05:26:11.774573 [7f4b47a32700] ERROR - Timeout (1000 milliseconds) occurred for UDP receive from target with URI: ipbusudp-2.0://10.145.91.18:2[0m
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod1 Fibre Rx5 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod1 Fibre Rx7 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod1 Fibre Rx9 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod1 Fibre Rx12 lost locked state.
+
+
+TIMESTAMP: 2016-Sep-27 09:13:49,080 INFO [virtual void RunCtrlActions::stopArchiving(...) at RodCrate/src/controller/RunCtrlActions.cpp:2061] Transition "STOPARCHIVING" has been done
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod1 Fibre Rx1 lost locked state.
+
+
+	runNumber  = 309444
+TIMESTAMP: [0;31m27-09-16 12:01:30.026423 [7f4ae4ed0700] ERROR - Timeout (1000 milliseconds) occurred for UDP receive from target with URI: ipbusudp-2.0://10.145.91.19:1[0m
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:1 In Ppod0 Fibre Rx5 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:1 In Ppod0 Fibre Rx6 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:1 In Ppod0 Fibre Rx8 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:1 In Ppod0 Fibre Rx10 lost locked state.
+
+
+TIMESTAMP: [0;31m27-09-16 12:59:54.064092 [7f4ae56d4700] ERROR - Timeout (1000 milliseconds) occurred for UDP receive from target with URI: ipbusudp-2.0://10.145.91.19:2[0m
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod0 Fibre Rx3 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod1 Fibre Rx3 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod0 Fibre Rx4 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod1 Fibre Rx4 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod0 Fibre Rx5 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod0 Fibre Rx6 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod1 Fibre Rx6 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod0 Fibre Rx7 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod0 Fibre Rx8 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod0 Fibre Rx9 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod0 Fibre Rx10 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod1 Fibre Rx10 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.18:2 In Ppod1 Fibre Rx11 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:1 In Ppod0 Fibre Rx3 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:1 In Ppod1 Fibre Rx3 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:1 In Ppod0 Fibre Rx4 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:1 In Ppod1 Fibre Rx4 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:1 In Ppod1 Fibre Rx5 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:1 In Ppod1 Fibre Rx6 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:1 In Ppod0 Fibre Rx7 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:1 In Ppod1 Fibre Rx7 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:1 In Ppod1 Fibre Rx8 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:1 In Ppod0 Fibre Rx9 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:1 In Ppod1 Fibre Rx9 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:1 In Ppod1 Fibre Rx10 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:1 In Ppod1 Fibre Rx11 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:1 In Ppod1 Fibre Rx12 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.20:2 In Ppod1 Fibre Rx12 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:2 In Ppod1 Fibre Rx9 lost locked state.
+
+
+TIMESTAMP: 2016-Sep-27 13:06:29,237 INFO [virtual void RunCtrlActions::connect(...) at RodCrate/src/controller/RunCtrlActions.cpp:1939] Transition "CONNECT" has been done
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:2 In Ppod0 Fibre Rx9 lost locked state.
+
+
+
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.19:2 In Ppod0 Fibre Rx10 lost locked state.
+
+
+TIMESTAMP: 2016-Sep-27 13:07:17,910 INFO [virtual void RunCtrlActions::connect(...) at RodCrate/src/controller/RunCtrlActions.cpp:1939] Transition "CONNECT" has been done
+virtual bool Abba::ReadStatus()ipbusudp-2.0://10.145.91.20:2 In Ppod1 Fibre Rx4 lost locked state.
+
+
+	runNumber  = 309447
