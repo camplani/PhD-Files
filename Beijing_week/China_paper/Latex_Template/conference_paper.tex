@@ -1,5 +1,10 @@
 \documentclass{llncs}
 
+\usepackage[figuresright]{rotating} % figures
+\usepackage{subfigure}
+\graphicspath{{./figure/}} % standard path for figures
+\usepackage[small,bf]{caption} % Caption style
+
 \usepackage{url}
 
 % Title and authors
@@ -22,21 +27,31 @@ The upgrade of the Large Hadron Collider (LHC) scheduled for shut-down period of
 %\tableofcontents
 
 \section{Introduction}
-LHC (Large Hadron Collider) is located at CERN, in Geneva Switzerland. It's a ring of about 27 km where two high-energy particle beams (maximum nominal center of mass energy of 14 TeV) are colliding in four major points. One of these collision points is ATLAS (A Toroidal LHC ApparatuS), a general-purpose particle physics experiment made of different detecting subsystems wrapped in layers around the collision point.
+LHC (Large Hadron Collider)is a ring of about 27 km where two high-energy particle beams (maximum nominal center of mass energy of 14 TeV) are colliding in four major points. One of these collision points is ATLAS (A Toroidal LHC ApparatuS), a general-purpose particle physics experiment made of different detecting subsystems wrapped in layers around the collision point.
 
-During Run 1 (2009-2013) and, still, during Run 2 (2015-2018) LHC shown very good performances and results. In particular, in June 2016, LHC exceeded the peak record luminosity value of $10^{34}$ cm$^{-2}$ s$^{-1}$. The luminosity value will again increase in the next years, that's why two upgrades are expected:
-\begin{itemize}
-\item Phase-I Upgrade (2021-2023). LHC design parameters should allow for an ultimate peak instantaneous luminosity of $3 \cdot 10^{34}$ cm$^{-2}$ s$^{-1}$.
-\item Phase-II Upgrade (after 2025). LHC will deliver instantaneous luminosity $5 \cdot 10^{34}$ cm$^{-2}$ s$^{-1}$.
-\end{itemize}
+During Run 1 (2009-2013) and, still, during Run 2 (2015-2018) LHC shown very good performances and results. In particular, in June 2016, LHC exceeded the peak record luminosity value of $10^{34}$ cm$^{-2}$ s$^{-1}$. The luminosity value will again increase in the next years, that's why two upgrades are expected. During Phase-I Upgrade (2021-2023) LHC design parameters should allow for an ultimate peak instantaneous luminosity of $3 \cdot 10^{34}$ cm$^{-2}$ s$^{-1}$.While during Phase-II Upgrade (after 2025) an instantaneous luminosity of $5 \cdot 10^{34}$ cm$^{-2}$ s$^{-1}$ will be delivered. Most of the subsystem will have to update or renew their electronics to be able to handle the huge amount of data.
 
 \subsection{Liquid Argon (LAr) calorimeter}
-The LAr calorimeter is one of the ATLAS subdetectors. It's a sampling calorimeter with lead absorber, liquid argon as active material, copper-kapton electrodes and designed with an accordion shape to provides a large acceptance and uniform response.
+The LAr calorimeter is one of the ATLAS subdetectors. It's a sampling calorimeter with lead absorber, liquid argon as active material and copper-kapton electrodes. It is designed with an accordion shape to provides a large acceptance and uniform response.
 
-The current LAr readout electronics system is designed to record energies in a range from $\sim$ 50 MeV to $\sim$ 3 TeV for a total of 180k channels from all the calorimeter parts, Barrel (EMB), End-Cap (EMEC), Hadronic (HEC) and Forward (FCal).
+The signals coming from the detector are collected on the 1524 front end boards. After amplification and shaping, the signals are summed on one side, in the so-called layer sum boards, for the trigger inputs. Further signals are summed again in the dedicated tower builder boards. On the other side signals are stored in analogue memories. Upon reception of a level 1 accept signal, the calorimeter signals are extracted from the memories, digitized and sent to the off detector system for further processing.
 \cite{Wilken:1269029} \cite{Aleksa:1602230}
 
-\subsection{Phase-I Upgrade}
+\subsection{LAr Phase-I Upgrade}
+The higher luminosity expected in the next years, as said before, will imply a bigger amount of data to be handled by the different subdetectors, for LAr as well. At the same time the LAr calorimeter will have to maintain a low $p_{T}$ lepton threshold and keep the same trigger bandwidth with respect to Run 2.
+
+The plan is to design, build, and install new trigger readout electronics during the second long shutdown (2019-2020). The aim is to   provide higher-granularity, higher-resolution and longitudinal shower information from the calorimeter to the Level-1 trigger processors.
+
+As shown in Picture \ref{fig:PhaseI}, there will be a 10-fold increase
+of granularity in the calorimeter trigger signal,can be seen in Fig. 1, which compares the energy deposition of an electron in the
+existing trigger readout system to that of the proposed upgrade system.
+
+\begin{figure}[h]
+	\centering	
+	\includegraphics[width=12cm]{phaseI.png}
+	\caption{asd}
+	\label{fig:PhaseI}
+\end{figure}
 
 \section{LAr electronics}
 \subsection{Front-End electronics}
