@@ -20,14 +20,14 @@ on behalf of the ATLAS Liquid Argon Calorimeter group}
 \maketitle
 
 % Abstract
-\begin{abstract}
+\section*{Abstract}
 The upgrade of the Large Hadron Collider (LHC) scheduled for shut-down period of 2018-2019, referred to as Phase-I upgrade, will increase the instantaneous luminosity to about three times the design value. Since the current ATLAS trigger system does not allow sufficient increase of the trigger rate, an improvement of the trigger system is required. The Liquid Argon (LAr) Calorimeter read-out will therefore be modified to use digital trigger signals with a higher spatial granularity in order to improve the identification efficiencies of electrons, photons, tau, jets and missing energy, at high background rejection rates at the Level-1 trigger. The new trigger signals will be arranged in 34000 so-called Super Cells which achieves 5-10 times better granularity than the trigger towers currently used and allows an improved background rejection. The readout of the trigger signals will process the signal of the Super Cells at every LHC bunch-crossing at 12-bit precision and a frequency of 40 MHz. The data will be transmitted to the back-end using a custom serializer and optical converter and 5.12 Gb/s optical links. In order to verify the full functionality of the future Liquid Argon trigger system, a demonstrator set-up has been installed on the ATLAS detector and is operated in parallel to the regular ATLAS data taking during the LHC Run-2. Noise level and linearity on the energy measurement have been verified to be within our requirements. In addition, we have collected data from 13 TeV proton collisions during the LHC 2015 run, and have observed real pulse from the detector through the demonstrator system. The talk will give an overview of the Phase-I Upgrade of the ATLAS Liquid Argon Calorimeter readout and present the custom developed hardware including their role in real-time data processing and fast data transfer. This contribution will also report on the performance of the newly developed ASICs including their radiation tolerance and on the performance of the prototype boards in the demonstrator system based on various measurements with the 13 TeV collision data. Results of the high-speed link test with the prototypes of the final electronic boards will be also reported.
-\end{abstract}
+%\end{abstract}
 
 %\tableofcontents
 
 \section{Introduction}
-LHC (Large Hadron Collider)is a ring of about 27 km where two high-energy particle beams (maximum nominal center of mass energy of 14 TeV) are colliding in four major points. One of these collision points is ATLAS (A Toroidal LHC ApparatuS), a general-purpose particle physics experiment made of different detecting subsystems wrapped in layers around the collision point.
+LHC (Large Hadron Collider) is a ring of about 27 km where two high-energy particle beams (maximum nominal center of mass energy of 14 TeV) are colliding in four major points. One of these collision points is ATLAS (A Toroidal LHC ApparatuS), a general-purpose particle physics experiment made of different detecting subsystems wrapped in layers around the collision point.
 
 During Run 1 (2009-2013) and, still, during Run 2 (2015-2018) LHC shown very good performances and results. In particular, in June 2016, LHC exceeded the peak record luminosity value of $10^{34}$ cm$^{-2}$ s$^{-1}$. The luminosity value will again increase in the next years, that's why two upgrades are expected. During Phase-I Upgrade (2021-2023) LHC design parameters should allow for an ultimate peak instantaneous luminosity of $3 \cdot 10^{34}$ cm$^{-2}$ s$^{-1}$.While during Phase-II Upgrade (after 2025) an instantaneous luminosity of $5 \cdot 10^{34}$ cm$^{-2}$ s$^{-1}$ will be delivered. Most of the subsystem will have to update or renew their electronics to be able to handle the huge amount of data.
 
@@ -38,23 +38,36 @@ The signals coming from the detector are collected on the 1524 front end boards.
 \cite{Wilken:1269029} \cite{Aleksa:1602230}
 
 \subsection{LAr Phase-I Upgrade}
-The higher luminosity expected in the next years, as said before, will imply a bigger amount of data to be handled by the different subdetectors, for LAr as well. At the same time the LAr calorimeter will have to maintain a low $p_{T}$ lepton threshold and keep the same trigger bandwidth with respect to Run 2.
+The higher luminosity expected in the next years will imply a bigger amount of data to be handled by the different subdetectors. At the same time the LAr calorimeter will have to maintain a low $p_{T}$ lepton threshold and keep the same trigger bandwidth with respect to Run 2.
 
 The plan is to design, build, and install new trigger readout electronics during the second long shutdown (2019-2020). The aim is to   provide higher-granularity, higher-resolution and longitudinal shower information from the calorimeter to the Level-1 trigger processors.
 
 As shown in Picture \ref{fig:PhaseI}, there will be a 10-fold increase
-of granularity in the calorimeter trigger signal,can be seen in Fig. 1, which compares the energy deposition of an electron in the
-existing trigger readout system to that of the proposed upgrade system.
+of granularity in the calorimeter trigger signal, can be seen in Fig. 1, which compares the energy deposition of an electron in the
+existing trigger readout system to that of the proposed upgrade system. 
 
-\begin{figure}[h]
+\begin{figure}[t]
 	\centering	
 	\includegraphics[width=12cm]{phaseI.png}
-	\caption{asd}
+	\caption{Trigger signal granularity improvement from Trigger Towers to Super Cells.}
 	\label{fig:PhaseI}
 \end{figure}
 
+The existing calorimeter trigger information, the so-called \emph{Trigger Tower}, will evolve in a new finer granularity scheme, based on so-called \emph{Super Cells}. They will provide information
+for each calorimeter layer for as well as finer segmentation per each layer. \cite{Aleksa:1602230}
+
 \section{LAr electronics}
+To be able to use the new finer granularity, the LAr electronics has to be upgraded, both in the Front-End (FE) and in the Back-End (BE).
+
 \subsection{Front-End electronics}
+The architecture of the FE electronics will not change for the Phase-I Upgrade, but the present system will be extended. The following boards are involved:
+\begin{itemize}
+\item \emph{New Layer Sum Board(LSB)}: it will produce a finer granularity Super Cell signals in the Front and Middle layers.
+\item \emph{New Base Plane}: it will keep the compatibility with existing setup and will route the new Super Cell signals.
+\item \emph{New LAr Trigger Digitizer Boards (LTDB)}: it will receive and digitize Super Cell signals and send them to the BE electronics.
+\end{itemize}
+
+
 
 \subsection{Back-End electronics}
 
