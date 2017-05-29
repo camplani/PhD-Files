@@ -4,8 +4,10 @@
 \usepackage{subfigure}
 \graphicspath{{./figure/}} % standard path for figures
 \usepackage[small,bf]{caption} % Caption style
-
+\usepackage{wrapfig}
 \usepackage{url}
+
+\raggedbottom
 
 % Title and authors
 \title{Phase-I Trigger Readout Electronics Upgrade for the ATLAS Liquid-Argon Calorimeters}
@@ -20,11 +22,10 @@ on behalf of the ATLAS Liquid Argon Calorimeter group}
 \maketitle
 
 % Abstract
-\section*{Abstract}
+%\section*{Abstract}
+\begin{abstract}
 The upgrade of the Large Hadron Collider (LHC) scheduled for shut-down period of 2018-2019, referred to as Phase-I upgrade, will increase the instantaneous luminosity to about three times the design value. Since the current ATLAS trigger system does not allow sufficient increase of the trigger rate, an improvement of the trigger system is required. The Liquid Argon (LAr) Calorimeter read-out will therefore be modified to use digital trigger signals with a higher spatial granularity in order to improve the identification efficiencies of electrons, photons, tau, jets and missing energy, at high background rejection rates at the Level-1 trigger. The new trigger signals will be arranged in 34000 so-called Super Cells which achieves 5-10 times better granularity than the trigger towers currently used and allows an improved background rejection. The readout of the trigger signals will process the signal of the Super Cells at every LHC bunch-crossing at 12-bit precision and a frequency of 40 MHz. The data will be transmitted to the back-end using a custom serializer and optical converter and 5.12 Gb/s optical links. In order to verify the full functionality of the future Liquid Argon trigger system, a demonstrator set-up has been installed on the ATLAS detector and is operated in parallel to the regular ATLAS data taking during the LHC Run-2. Noise level and linearity on the energy measurement have been verified to be within our requirements. In addition, we have collected data from 13 TeV proton collisions during the LHC 2015 run, and have observed real pulse from the detector through the demonstrator system. The talk will give an overview of the Phase-I Upgrade of the ATLAS Liquid Argon Calorimeter readout and present the custom developed hardware including their role in real-time data processing and fast data transfer. This contribution will also report on the performance of the newly developed ASICs including their radiation tolerance and on the performance of the prototype boards in the demonstrator system based on various measurements with the 13 TeV collision data. Results of the high-speed link test with the prototypes of the final electronic boards will be also reported.
-%\end{abstract}
-
-%\tableofcontents
+\end{abstract}
 
 \section{Introduction}
 LHC (Large Hadron Collider) is a ring of about 27 km where two high-energy particle beams (maximum nominal center of mass energy of 14 TeV) are colliding in four major points. One of these collision points is ATLAS (A Toroidal LHC ApparatuS), a general-purpose particle physics experiment made of different detecting subsystems wrapped in layers around the collision point.
@@ -61,17 +62,57 @@ To be able to use the new finer granularity, the LAr electronics has to be upgra
 
 \subsection{Front-End electronics}
 The architecture of the FE electronics will not change for the Phase-I Upgrade, but the present system will be extended. The following boards are involved:
+
 \begin{itemize}
 \item \emph{New Layer Sum Board(LSB)}: it will produce a finer granularity Super Cell signals in the Front and Middle layers.
 \item \emph{New Base Plane}: it will keep the compatibility with existing setup and will route the new Super Cell signals.
 \item \emph{New LAr Trigger Digitizer Boards (LTDB)}: it will receive and digitize Super Cell signals and send them to the BE electronics.
 \end{itemize}
 
+\begin{wrapfigure}{t}{0.60\textwidth}
+\vspace{-25pt}
+  \centering
+    \includegraphics[width=0.45\textwidth]{ltdb.png}
+  \caption{LTDB board under test.}
+  \label{fig:ltdb}
+ \vspace{-40pt}
+\end{wrapfigure}
 
+The LTDB, shown in Figure \ref{fig:ltdb}, is the key board for the Phase-I upgrade. There will 124 boards and each of them will process up to 320 Super Cell analog signals. This analog signal will be digitised with 12-bit custom ADCs at 40 MHz and sent to the BE using 40 optical links at 5.12 Gbps, with custom ASICs (LOCx2 and LOCld). As the LTDB will be exposed to a high radiation level, all components have to be subjected to extensive radiation qualification tests \cite{Buchanan:1151347}.
+
+The custom ADC is a quad-channel 12-bit 40 MS/s pipeline SAR ADC, which consists of four pipeline A/D channels with 12-bit resolution each. The sampling information is derived from the rising edge of the differential input SLVS 40 MHz clock. The data are sent out serially using 320 MHz DDR SLVS clock signaling. The ADC consumes around 43 mW per channel \cite{Xu:2229579}. Recently, the radiation tolerance for the ADCs design has been established to be up to 10 MRad (the requirement is 100 kRad).
+
+LOCx2 consists of two channels and each channel encodes ADC data with an overhead of 14.3$\%$ and transmits serial data at 5.12 Gbps with a latency of less than 27.2 ns. LOCx2 is fabricated with a commercial 0.25-µm Silicon-on-Sapphire CMOS technology and is packaged in a 100 pin QFN package. The power consumption of LOCx2 is about 843 mW \cite{1748-0221-11-02-C02013}.
+LOCld is a VCSEL (Vertical Cavity Surface-Emitting Lasers) driver in a commercial 0.25 µm Silicon-on-Sapphire (SoS) CMOS process, designed for the optical interface and packaged in a 40 pin QFN package \cite{1748-0221-8-01-C01031}. 
+Both the LOCx2 and LOCld has been irradiated up to 200 kRad and no changes in the output eye diagrams have been observed.
 
 \subsection{Back-End electronics}
+The LAr calorimeter BE electronics system, called the LAr Digital Processing System (LDPS), will receive digital SC data from the LTDBs of the upgraded FE system, reconstructs $E_{T}$ (the transverse energy of each SC), and transmits the results to the Level-1 Calorimeter Trigger System every 25 ns. 
+
+The LDPS consists of 32 ATCA Carrier boards, shown in Figure \ref{fig:carr}, each one equipped with four Advanced Mezzanine Cards (AMC) called LATOME, shown in Figure \ref{fig:lat}. 
+The LATOME is built around one ARRIA 10 FPGA (from ALTERA) with large capabilities for internal logic and memory, DSP processing for signal reconstruction algorithms and high-speed communications. The main data path is actually passing through the LATOME and here trigger tower transverse energy is built.
+\begin{figure}[h]
+\begin{minipage}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{carrier.png}
+		\caption{ATCA Carrier board.}
+		\label{fig:carr}
+\end{minipage}
+\begin{minipage}[t]{0.55\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{latome.png}
+		\caption{LATOME board.}
+		\label{fig:lat}
+\end{minipage}
+\end{figure}
+
+A System Test with the final prototype is being prepared. The first tests have been done at the beginning of 2017, and more are planned to be done in the next months. The purpose is to confirm all the functionalities before the mass production.
 
 \section{Demonstrator}
+A demonstrator was installed in ATLAS in the calorimeter EM barrel, with a coverage of 1/32 of barrel region, during summer 2014 to show the feasibility of the Phase I Upgrade. In the FE there are 2 LTDBs while for the BE there are 3 (originally 2) ATCA test Board for Baseline Acquisition (ABBA).
+
+The demonstrator is reading data from the Super Cells with the aim of validating the energy reconstruction and collecting real collision data for the filtering algorithm development. Of course this will allow to gain some experience in the installation and operation of such equipment in the ATLAS environment.
+
 
 \section{Conclusion}
 
