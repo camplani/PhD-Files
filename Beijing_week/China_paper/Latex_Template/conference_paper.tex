@@ -91,7 +91,7 @@ The LAr calorimeter BE electronics system, called the LAr Digital Processing Sys
 
 The LDPS consists of 32 ATCA Carrier boards, shown in Figure \ref{fig:carr}, each one equipped with four Advanced Mezzanine Cards (AMC) called LATOME, shown in Figure \ref{fig:lat}. 
 The LATOME is built around one ARRIA 10 FPGA (from ALTERA) with large capabilities for internal logic and memory, DSP processing for signal reconstruction algorithms and high-speed communications. The main data path is actually passing through the LATOME and here trigger tower transverse energy is built.
-\begin{figure}[h]
+\begin{figure}[ht]
 \begin{minipage}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{carrier.png}
@@ -113,8 +113,32 @@ A demonstrator was installed in ATLAS in the calorimeter EM barrel, with a cover
 
 The demonstrator is reading data from the Super Cells with the aim of validating the energy reconstruction and collecting real collision data for the filtering algorithm development. Of course this will allow to gain some experience in the installation and operation of such equipment in the ATLAS environment.
 
+The LTDBs are sending the calorimeter data, from 284 Super Cells in electromagnetic barrel, along 48 optical links at 4.8 Gbps to the ABBA, with a total throughput of about 200 Gbps per LTDB. ABBA stores the Super Cells data into a circular buffer and waits for a level-1 trigger to readout the Super Cells data. The readout is done using IPbus protocol over UDP on 10 GbE network.
+
+\begin{figure}[ht]
+\begin{minipage}[l]{0.5\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{ltdb_crate.png}
+	\caption{USA15 crate with LTDB.}
+	\label{fig:demo_ltdb}
+\end{minipage}
+\begin{minipage}[r]{0.47\textwidth}
+	\includegraphics[width=\textwidth]{abba.png}
+	\caption{ABBA boards.}
+	\label{fig:abba}
+\end{minipage}
+\end{figure}
+
+The demonstrator system had a successful data taking during 2015 and 2016, collecting data in parallel with ATLAS for both proton-proton and heavy ion collisions. This can be done also thanks to the special Level-1 topological trigger item provided by the L1 community that is allowing to compared the demonstrator readout with the ATLAS main readout.
+
+The plan for early 2018 is to have a final prototype installed and running in end of Run 2.
 
 \section{Conclusion}
+The ATLAS Lar calorimeter electronics will be upgraded for Phase-1 after Long Shutdown 2 (2019-2020). During this upgrade the calorimeter the trigger path will be digitized at FE level, to make use of an improved granularity for the event selection.
+
+Presently, the new FE and BE systems are being developed and produced. The LTDB prototype is being assembled, the radiation tolerant ADC and optical links are designed and under test as well as the LDPB ATCA carrier and LATOME AMC boards. 
+
+In the meantime, a part of the new trigger scheme (a demonstrator) has been installed on the detector, during summer 2014. During 2015 and 2016 it was collecting data in parallel with ATLAS for both proton-proton and heavy ion collisions and now it's getting ready also for 2017 data. This demonstrator is giving the possibility to gain some experience in order to get ready for the final prototype installation and run in 2018.
 
 \bibliographystyle{ieeetr}
 \bibliography{biblio}
