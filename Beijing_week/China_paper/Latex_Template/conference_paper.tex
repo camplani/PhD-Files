@@ -28,39 +28,21 @@ The upgrade of the Large Hadron Collider (LHC) scheduled for shut-down period of
 \end{abstract}
 
 \section{Introduction}
-LHC shown very good performances and results during Run 1 (2009-2013) and, still, during Run 2 (2015-2018). In particular, in June 2016, LHC exceeded the peak record luminosity value of $10^{34}$ cm$^{-2}$ s$^{-1}$. The luminosity value will again increase in the next years, that's why two upgrades are expected. During Phase-I Upgrade (2021-2023) LHC design parameters should allow for an ultimate peak instantaneous luminosity of $3 \cdot 10^{34}$ cm$^{-2}$ s$^{-1}$.While during Phase-II Upgrade (after 2025) an instantaneous luminosity of $5 \cdot 10^{34}$ cm$^{-2}$ s$^{-1}$ will be delivered. Since ATLAS trigger system does not allow a sufficient increase of the trigger rate, an electronic upgrade is required.
+LHC shown very good performances and results during Run 1 (2009-2013) and, still, during Run 2 (2015-2018). In particular, in June 2016, LHC exceeded the peak record luminosity value of $10^{34}$ cm$^{-2}$ s$^{-1}$ \cite{Pralavorio:2203203}. The luminosity value will again increase in the next years, that's why two upgrades are expected. During Phase-I Upgrade (2021-2023) LHC design parameters should allow for an ultimate peak instantaneous luminosity of $3 \cdot 10^{34}$ cm$^{-2}$ s$^{-1}$.While during Phase-II Upgrade (after 2025) an instantaneous luminosity of $5 \cdot 10^{34}$ cm$^{-2}$ s$^{-1}$ will be delivered. Since ATLAS trigger system does not allow a sufficient increase of the trigger rate, an electronic upgrade is required.
 
 \section{ATLAS Liquid Argon (LAr) calorimeter Upgrade}
-%The LAr calorimeter is one of the ATLAS subdetectors. It's a sampling calorimeter with lead absorber, liquid argon as active material and copper-kapton electrodes. It is designed with an accordion shape to provides a large acceptance and uniform response.
-
-%The signals coming from the detector are collected on the 1524 front end boards. After amplification and shaping, the signals are summed on one side, in the so-called layer sum boards, for the trigger inputs. Further signals are summed again in the dedicated tower builder boards. On the other side signals are stored in analogue memories. Upon reception of a level 1 accept signal, the calorimeter signals are extracted from the memories, digitized and sent to the off detector system for further processing.
-%\cite{Wilken:1269029} \cite{Aleksa:1602230}
-
-%\subsection{LAr Phase-I Upgrade}
-To face the Phase-I luminosity, the LAr calorimeter trigger electronics will be modified, in order to maintain a low $p_{T}$ lepton threshold and keep the same trigger bandwidth with respect to Run 2.
-
-The plan is to design, build, and install new trigger readout electronics during the second long shut-down (2019-2020). The aim is to   provide higher-granularity, higher-resolution and longitudinal shower information from the calorimeter to the Level-1 trigger processors.
-
-As shown in Picture \ref{fig:PhaseI}, which compares the electron energy deposition in the present trigger readout system to that of the proposed Super Cell system, there will 5-10 increased granularity in the calorimeter trigger signals. 
-
+To face the Phase-I luminosity, the LAr calorimeter trigger electronics will be modified, in order to maintain a low $p_{T}$ lepton threshold and keep the same trigger bandwidth with respect to Run 2. The new trigger readout electronics will be installed during the second long shut-down (2019-2020). The aim is to provide higher-granularity, higher-resolution and longitudinal shower information from the calorimeter to the Level-1 trigger processors.
 \begin{figure}[h]
 	\centering	
 	\includegraphics[width=10cm]{phaseI.png}
 	\caption{Trigger signal granularity improvement from Trigger Towers to Super Cells.}
 	\label{fig:PhaseI}
 \end{figure}
-
-The existing calorimeter trigger information, the so-called \emph{Trigger Tower}, will evolve in a new finer granularity scheme, based on so-called \emph{Super Cells}. They will provide information
-for each calorimeter layer for as well as finer segmentation per each layer. \cite{Aleksa:1602230}
+As shown in Picture \ref{fig:PhaseI}, which compares the electron energy deposition in the present system to the proposed Super Cell system, there will 5-10 increased granularity in the calorimeter trigger signals.
+The existing calorimeter trigger information, the so-called Trigger Tower, will evolve in a new finer granularity scheme, based on so-called Super Cells \cite{Aleksa:1602230}.
 
 \subsection{LAr Front-End electronics}
-The architecture of the FE electronics will not change for the Phase-I Upgrade, but the present system will be extended. The following boards are involved:
-
-\begin{itemize}
-\item \emph{New Layer Sum Board(LSB)}: it will produce a finer granularity Super Cell signals in the Front and Middle layers.
-\item \emph{New Base Plane}: it will keep the compatibility with existing setup and will route the new Super Cell signals.
-\item \emph{New LAr Trigger Digitizer Boards (LTDB)}: it will receive and digitize Super Cell signals and send them to the BE electronics.
-\end{itemize}
+The architecture of the FE electronics will not change for the Phase-I Upgrade, but some of the present system boards will be improved or extended. A new Layer Sum Board (LSB) will produce the finer granularity Super Cell signals in the Front and Middle layers. A new baseplane will keep the compatibility with the existing setup and will route the new Super Cell signals. And a new LAr Trigger Digitizer Boards (LTDB) will receive, digitize and send to the BE electronics the Super Cell signals.
 
 \begin{wrapfigure}{t}{0.45\textwidth}
 \vspace{-25pt}
@@ -71,56 +53,42 @@ The architecture of the FE electronics will not change for the Phase-I Upgrade, 
  \vspace{-20pt}
 \end{wrapfigure}
 
-The LTDB, shown in Figure \ref{fig:ltdb}, is the key board for the Phase-I upgrade. There will 124 boards and each of them will process up to 320 Super Cell analog signals. This analog signal will be digitised with 12-bit custom ADCs at 40 MHz and sent to the BE using 40 optical links at 5.12 Gbps, with custom ASICs (LOCx2 and LOCld). As the LTDB will be exposed to a high radiation level, all components have to be subjected to extensive radiation qualification tests \cite{Buchanan:1151347}.
+The LTDB, shown in Figure \ref{fig:ltdb}, is the key board for the Phase-I upgrade. There will be 124 LTDB boards and each of them will process up to 320 Super Cell analog signals. As the LTDB will be exposed to a high radiation level, all components have to be subjected to extensive radiation qualification tests \cite{Buchanan:1151347}.
 
-The custom ADC is a quad-channel 12-bit 40 MS/s pipeline SAR ADC, which consists of four pipeline A/D channels with 12-bit resolution each. The sampling information is derived from the rising edge of the differential input SLVS 40 MHz clock. The data are sent out serially using 320 MHz DDR SLVS clock signaling. The ADC consumes around 43 mW per channel \cite{Xu:2229579}. Recently, the radiation tolerance for the ADCs design has been established to be up to 10 MRad (the requirement is 100 kRad).
-
-LOCx2 consists of two channels and each channel encodes ADC data with an overhead of 14.3$\%$ and transmits serial data at 5.12 Gbps with a latency of less than 27.2 ns. LOCx2 is fabricated with a commercial 0.25-µm Silicon-on-Sapphire CMOS technology and is packaged in a 100 pin QFN package. The power consumption of LOCx2 is about 843 mW \cite{1748-0221-11-02-C02013}.
-LOCld is a VCSEL (Vertical Cavity Surface-Emitting Lasers) driver in a commercial 0.25 µm Silicon-on-Sapphire (SoS) CMOS process, designed for the optical interface and packaged in a 40 pin QFN package \cite{1748-0221-8-01-C01031}. 
-Both the LOCx2 and LOCld has been irradiated up to 200 kRad and no changes in the output eye diagrams have been observed.
+The custom ADC is a quad-channel 12-bit 40 MS/s pipeline SAR ADC, designed with 130 nm technology \cite{Xu:2229579}. Recently, the radiation tolerance for the ADCs design has been tested with good results up to 10 MRad (the requirement is 100 kRad).
+LOCx2 is a dual $8 \times 12$ bit serializer, with 5.12 Gbps of output and fabricated with a commercial 250 nm Silicon-on-Sapphire CMOS technology \cite{1748-0221-11-02-C02013}. LOCld is a VCSEL (Vertical Cavity Surface-Emitting Lasers) driver in a commercial 250 µm Silicon-on-Sapphire (SoS) CMOS process, designed for the optical interface \cite{1748-0221-8-01-C01031}. Both the LOCx2 and LOCld has been irradiated up to 200 kRad and no changes in the output eye diagrams have been observed.
 
 \subsection{LAr Back-End electronics}
+\begin{wrapfigure}{L}{0.45\textwidth}
+\vspace{-25pt}
+  \centering
+    \includegraphics[width=4cm]{carrElat.png}
+	\caption{ATCA Carrier and LATOME board.}
+	\label{fig:carrElat}
+ \vspace{-20pt}
+\end{wrapfigure}
 The LAr calorimeter BE electronics system, called the LAr Digital Processing System (LDPS), will receive digital SC data from the LTDBs of the upgraded FE system, reconstructs $E_{T}$ (the transverse energy of each SC), and transmits the results to the Level-1 Calorimeter Trigger System every 25 ns. 
 
-The LDPS consists of 32 ATCA Carrier boards, shown in Figure \ref{fig:carr}, each one equipped with four Advanced Mezzanine Cards (AMC) called LATOME, shown in Figure \ref{fig:lat}. 
+The LDPS consists of 32 ATCA Carrier boards, each one equipped with four Advanced Mezzanine Cards (AMC) called LATOME, both shown in Figure \ref{fig:carrElat}. 
 The LATOME is built around one ARRIA 10 FPGA (from ALTERA) with large capabilities for internal logic and memory, DSP processing for signal reconstruction algorithms and high-speed communications. The main data path is actually passing through the LATOME and here trigger tower transverse energy is built.
-\begin{figure}[ht]
-\begin{minipage}[t]{0.45\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{carrier.png}
-		\caption{ATCA Carrier board.}
-		\label{fig:carr}
-\end{minipage}
-\begin{minipage}[t]{0.55\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{latome.png}
-		\caption{LATOME board.}
-		\label{fig:lat}
-\end{minipage}
-\end{figure}
 
 A System Test with the final prototype is being prepared. The first tests have been done at the beginning of 2017, and more are planned to be done in the next months. The purpose is to confirm all the functionalities before the mass production.
 
 \section{Demonstrator}
 A demonstrator was installed in ATLAS in the calorimeter EM barrel, with a coverage of 1/32 of barrel region, during summer 2014 to show the feasibility of the Phase I Upgrade. In the FE there are 2 LTDBs while for the BE there are 3 (originally 2) ATCA test Board for Baseline Acquisition (ABBA).
 
+\begin{wrapfigure}{r}{0.45\textwidth}
+\vspace{-20pt}
+	\centering
+	\includegraphics[width=4cm]{abba.png}
+	\caption{ABBA boards.}
+	\label{fig:abba}
+ \vspace{-20pt}
+\end{wrapfigure}
+
 The demonstrator is reading data from the Super Cells with the aim of validating the energy reconstruction and collecting real collision data for the filtering algorithm development. Of course this will allow to gain some experience in the installation and operation of such equipment in the ATLAS environment.
 
 The LTDBs are sending the calorimeter data, from 284 Super Cells in electromagnetic barrel, along 48 optical links at 4.8 Gbps to the ABBA, with a total throughput of about 200 Gbps per LTDB. ABBA stores the Super Cells data into a circular buffer and waits for a level-1 trigger to readout the Super Cells data. The readout is done using IPbus protocol over UDP on 10 GbE network.
-
-\begin{figure}[ht]
-\begin{minipage}[l]{0.5\textwidth}
-	\centering
-	\includegraphics[width=\textwidth]{ltdb_crate.png}
-	\caption{USA15 crate with LTDB.}
-	\label{fig:demo_ltdb}
-\end{minipage}
-\begin{minipage}[r]{0.47\textwidth}
-	\includegraphics[width=\textwidth]{abba.png}
-	\caption{ABBA boards.}
-	\label{fig:abba}
-\end{minipage}
-\end{figure}
 
 The demonstrator system had a successful data taking during 2015 and 2016, collecting data in parallel with ATLAS for both proton-proton and heavy ion collisions. This can be done also thanks to the special Level-1 topological trigger item provided by the L1 community that is allowing to compared the demonstrator readout with the ATLAS main readout.
 
