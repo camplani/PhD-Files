@@ -28,28 +28,24 @@ The upgrade of the Large Hadron Collider (LHC) scheduled for shut-down period of
 \end{abstract}
 
 \section{Introduction}
-LHC (Large Hadron Collider) is a ring of about 27 km where two high-energy particle beams (maximum nominal center of mass energy of 14 TeV) are colliding in four major points. One of these collision points is ATLAS (A Toroidal LHC ApparatuS), a general-purpose particle physics experiment made of different detecting subsystems wrapped in layers around the collision point.
+LHC shown very good performances and results during Run 1 (2009-2013) and, still, during Run 2 (2015-2018). In particular, in June 2016, LHC exceeded the peak record luminosity value of $10^{34}$ cm$^{-2}$ s$^{-1}$. The luminosity value will again increase in the next years, that's why two upgrades are expected. During Phase-I Upgrade (2021-2023) LHC design parameters should allow for an ultimate peak instantaneous luminosity of $3 \cdot 10^{34}$ cm$^{-2}$ s$^{-1}$.While during Phase-II Upgrade (after 2025) an instantaneous luminosity of $5 \cdot 10^{34}$ cm$^{-2}$ s$^{-1}$ will be delivered. Since ATLAS trigger system does not allow a sufficient increase of the trigger rate, an electronic upgrade is required.
 
-During Run 1 (2009-2013) and, still, during Run 2 (2015-2018) LHC shown very good performances and results. In particular, in June 2016, LHC exceeded the peak record luminosity value of $10^{34}$ cm$^{-2}$ s$^{-1}$. The luminosity value will again increase in the next years, that's why two upgrades are expected. During Phase-I Upgrade (2021-2023) LHC design parameters should allow for an ultimate peak instantaneous luminosity of $3 \cdot 10^{34}$ cm$^{-2}$ s$^{-1}$.While during Phase-II Upgrade (after 2025) an instantaneous luminosity of $5 \cdot 10^{34}$ cm$^{-2}$ s$^{-1}$ will be delivered. Most of the subsystem will have to update or renew their electronics to be able to handle the huge amount of data.
+\section{ATLAS Liquid Argon (LAr) calorimeter Upgrade}
+%The LAr calorimeter is one of the ATLAS subdetectors. It's a sampling calorimeter with lead absorber, liquid argon as active material and copper-kapton electrodes. It is designed with an accordion shape to provides a large acceptance and uniform response.
 
-\subsection{Liquid Argon (LAr) calorimeter}
-The LAr calorimeter is one of the ATLAS subdetectors. It's a sampling calorimeter with lead absorber, liquid argon as active material and copper-kapton electrodes. It is designed with an accordion shape to provides a large acceptance and uniform response.
+%The signals coming from the detector are collected on the 1524 front end boards. After amplification and shaping, the signals are summed on one side, in the so-called layer sum boards, for the trigger inputs. Further signals are summed again in the dedicated tower builder boards. On the other side signals are stored in analogue memories. Upon reception of a level 1 accept signal, the calorimeter signals are extracted from the memories, digitized and sent to the off detector system for further processing.
+%\cite{Wilken:1269029} \cite{Aleksa:1602230}
 
-The signals coming from the detector are collected on the 1524 front end boards. After amplification and shaping, the signals are summed on one side, in the so-called layer sum boards, for the trigger inputs. Further signals are summed again in the dedicated tower builder boards. On the other side signals are stored in analogue memories. Upon reception of a level 1 accept signal, the calorimeter signals are extracted from the memories, digitized and sent to the off detector system for further processing.
-\cite{Wilken:1269029} \cite{Aleksa:1602230}
+%\subsection{LAr Phase-I Upgrade}
+To face the Phase-I luminosity, the LAr calorimeter trigger electronics will be modified, in order to maintain a low $p_{T}$ lepton threshold and keep the same trigger bandwidth with respect to Run 2.
 
-\subsection{LAr Phase-I Upgrade}
-The higher luminosity expected in the next years will imply a bigger amount of data to be handled by the different subdetectors. At the same time the LAr calorimeter will have to maintain a low $p_{T}$ lepton threshold and keep the same trigger bandwidth with respect to Run 2.
+The plan is to design, build, and install new trigger readout electronics during the second long shut-down (2019-2020). The aim is to   provide higher-granularity, higher-resolution and longitudinal shower information from the calorimeter to the Level-1 trigger processors.
 
-The plan is to design, build, and install new trigger readout electronics during the second long shutdown (2019-2020). The aim is to   provide higher-granularity, higher-resolution and longitudinal shower information from the calorimeter to the Level-1 trigger processors.
+As shown in Picture \ref{fig:PhaseI}, which compares the electron energy deposition in the present trigger readout system to that of the proposed Super Cell system, there will 5-10 increased granularity in the calorimeter trigger signals. 
 
-As shown in Picture \ref{fig:PhaseI}, there will be a 10-fold increase
-of granularity in the calorimeter trigger signal, can be seen in Fig. 1, which compares the energy deposition of an electron in the
-existing trigger readout system to that of the proposed upgrade system. 
-
-\begin{figure}[t]
+\begin{figure}[h]
 	\centering	
-	\includegraphics[width=12cm]{phaseI.png}
+	\includegraphics[width=10cm]{phaseI.png}
 	\caption{Trigger signal granularity improvement from Trigger Towers to Super Cells.}
 	\label{fig:PhaseI}
 \end{figure}
@@ -57,10 +53,7 @@ existing trigger readout system to that of the proposed upgrade system.
 The existing calorimeter trigger information, the so-called \emph{Trigger Tower}, will evolve in a new finer granularity scheme, based on so-called \emph{Super Cells}. They will provide information
 for each calorimeter layer for as well as finer segmentation per each layer. \cite{Aleksa:1602230}
 
-\section{LAr electronics}
-To be able to use the new finer granularity, the LAr electronics has to be upgraded, both in the Front-End (FE) and in the Back-End (BE).
-
-\subsection{Front-End electronics}
+\subsection{LAr Front-End electronics}
 The architecture of the FE electronics will not change for the Phase-I Upgrade, but the present system will be extended. The following boards are involved:
 
 \begin{itemize}
@@ -69,13 +62,13 @@ The architecture of the FE electronics will not change for the Phase-I Upgrade, 
 \item \emph{New LAr Trigger Digitizer Boards (LTDB)}: it will receive and digitize Super Cell signals and send them to the BE electronics.
 \end{itemize}
 
-\begin{wrapfigure}{t}{0.60\textwidth}
+\begin{wrapfigure}{t}{0.45\textwidth}
 \vspace{-25pt}
   \centering
-    \includegraphics[width=0.45\textwidth]{ltdb.png}
+    \includegraphics[width=0.44\textwidth]{ltdb.png}
   \caption{LTDB board under test.}
   \label{fig:ltdb}
- \vspace{-40pt}
+ \vspace{-20pt}
 \end{wrapfigure}
 
 The LTDB, shown in Figure \ref{fig:ltdb}, is the key board for the Phase-I upgrade. There will 124 boards and each of them will process up to 320 Super Cell analog signals. This analog signal will be digitised with 12-bit custom ADCs at 40 MHz and sent to the BE using 40 optical links at 5.12 Gbps, with custom ASICs (LOCx2 and LOCld). As the LTDB will be exposed to a high radiation level, all components have to be subjected to extensive radiation qualification tests \cite{Buchanan:1151347}.
@@ -86,7 +79,7 @@ LOCx2 consists of two channels and each channel encodes ADC data with an overhea
 LOCld is a VCSEL (Vertical Cavity Surface-Emitting Lasers) driver in a commercial 0.25 µm Silicon-on-Sapphire (SoS) CMOS process, designed for the optical interface and packaged in a 40 pin QFN package \cite{1748-0221-8-01-C01031}. 
 Both the LOCx2 and LOCld has been irradiated up to 200 kRad and no changes in the output eye diagrams have been observed.
 
-\subsection{Back-End electronics}
+\subsection{LAr Back-End electronics}
 The LAr calorimeter BE electronics system, called the LAr Digital Processing System (LDPS), will receive digital SC data from the LTDBs of the upgraded FE system, reconstructs $E_{T}$ (the transverse energy of each SC), and transmits the results to the Level-1 Calorimeter Trigger System every 25 ns. 
 
 The LDPS consists of 32 ATCA Carrier boards, shown in Figure \ref{fig:carr}, each one equipped with four Advanced Mezzanine Cards (AMC) called LATOME, shown in Figure \ref{fig:lat}. 
